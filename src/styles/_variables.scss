@@ -1,0 +1,87 @@
+// Font: 
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+//H1 & H2:
+$font_crimson-text: "Crimson Text", sans-serif;
+//Body text:
+$font_crimson-pro: "Crimson Pro", sans-serif;
+
+//Font weight:
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+//Border:
+$border-radius-small: 10px;
+$border-radius-medium: 20px;
+$border-radius-large: 16px;
+
+//Spacing:
+$indent__base: 16px;
+$indent__s: $indent__base + 4;
+$indent__m: $indent__base * 1.5;
+$indent__l: $indent__base + 12;
+$indent__xl: $indent__base * 2;
+$indent__m: $indent__base + 20;
+$indent__xxl: $indent__base * 3;
+$indent__xxxl: $indent__base * 2.5;
+
+//Breakpoints:
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 400px;
+
+
+// Colors:
+//Hero page-Desktop Colors:
+$color-white: #FFFFFF;
+$color-gray: #D9D9D9;
+$color-lighGray: #F2F2F2;
+$color-purest-black: #000000;
+$color-shade-black: #0D0D0D;
+$color-dark-transparent: #00000030;
+$color-smoky-black: #0C0C0C;
+$color-dark-red: #5A0000;
+$color-shad-red: #AC081580;
+
+
+//Media page-Desktop Colors:
+$color-light-red: #FF0000;
+$color-transparent-black: #00000060;
+$color-dark-green: #020907;
+$color-light-silver: rgba(217, 217, 217, 1.3);
+$color-transparent-white: #ffffff50;
+
+//About page-Desktop Colors:
+$color-bright-gray: #00000052;
+
+//Content Creators page-Desktop Colors:
+$color-dark-cyan: #115560;
+$color-transparent-gray: #d9d9d900;
+$color-white-smok: #f2f2f230;
+$color-darksmok-gray: #00000070;
+$color-lightsmok-gray: #00000000;
+
+// Footer Colors:
+// $color-gray: #D9D9D9;
+// $color-lighGray: #F2F2F2;
+// $color-white: #FFFFFF;
+// $color-shade-black: #0D0D0D;
+
+//Hero page-Mobil Colors:
+$color-darker-red: #2A0000;
+$color-chinese-black: #151515;
+$color-shade-red: #82000A90;
+$color-shadlight-red: #8B020D60;
+
+//Media page-Mobil Colors:
+$color-deep-blue: #0A171B;
+$color-light-whitesmok: #F2F2F280;
+$color-blue-gray-shad: #152f3650;
+$color-blue-gray: #152f36;
+
+//Hamburger menu-Mobil Colors:
+//$color-white: #FFFFFF;
+//$color-black-purest: #000000;
+$color-whitshadow-smok: #F2F2F290;
