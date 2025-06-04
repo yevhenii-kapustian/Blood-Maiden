@@ -10,22 +10,22 @@ import { languages } from "@/data/data"
         }
     }
 
-    export const getPages = (location: string): string[] => {
-        switch (location) {
-            case 'en':
-                return languages.navigation.en.pages;
-            case 'se':
-                return languages.navigation.se.pages;
-            default: return languages.navigation.en.pages;
+    export const getPages = (version: string): string[] => {
+        switch (version) {
+            case 'desktop':
+                return languages.navigation.desktop.pages;
+            case 'mobile':
+                return languages.navigation.mobile.pages;
+            default: return languages.navigation.desktop.pages;
         }
     }
     
     export const getRoutes = (location: string): string[] => {
         switch (location) {
-            case 'en':
-                return languages.navigation.en.routes;
-            case 'se':
-                return languages.navigation.se.routes;
-            default: return languages.navigation.en.routes;
+            case 'desktop':
+                return languages.navigation.desktop.routes;
+            case 'mobile':
+                return languages.navigation.mobile.routes;
+            default: return languages.navigation.mobile.routes;
         }
     }

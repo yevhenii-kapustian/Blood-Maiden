@@ -1,13 +1,13 @@
 export const languages = {
     navigation: {
-        en: {
+        desktop: {
             pages: ['home', 'media', 'about', 'content creators'],
             routes: ['home', 'media', 'about', 'content creators']
         },
-        se: {
-            pages: ['hem', 'media', 'om spelet', 'utvecklare'],
+        mobile: {
+            pages: ['home', 'media', 'about', 'creators'],
             routes: ['home', 'media', 'about', 'content creators']
         }
     }
 }
-export const routes = ['home', 'media', 'about', 'content creators']
+

@@ -11,7 +11,7 @@ interface INavItem {
 const NavigationItem = ({ name, route }: INavItem):ReactElement => {
     const path = usePathname();
     const pathFix = route.replaceAll(" ", "");
-    console.log(path);
+    
     return (
         <Link passHref={true} href={`/${route === 'home' ? "" : pathFix}`}
             className={`nav__item ${path === '/' + pathFix && path !== '/' ?
