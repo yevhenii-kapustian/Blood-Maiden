@@ -4,14 +4,14 @@ import { usePathname } from "next/navigation";
 import { ReactElement } from "react";
 
 interface INavItem {
-    name: string
-    route:string
+    name: string,
+    route: string
 }
 
-const NavigationItem = ({ name, route }: INavItem):ReactElement => {
-    const path = usePathname();
-    const pathFix = route.replaceAll(" ", "");
-    
+const NavigationItem = ({ name, route }: INavItem): ReactElement => {
+    const path: string = usePathname();
+    const pathFix: string = route.replaceAll(" ", "");
+
     return (
         <Link passHref={true} href={`/${route === 'home' ? "" : pathFix}`}
             className={`nav__item ${path === '/' + pathFix && path !== '/' ?

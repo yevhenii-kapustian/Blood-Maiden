@@ -2,17 +2,17 @@
 import { ReactElement, useState } from "react";
 import { Icon } from '@iconify-icon/react';
 import { getLanguage, getPages, getRoutes } from "@/utils/functions";
-import { languages } from "@/data/data";
+import { pagesAndRoutes } from "@/data/data";
 
 interface INavLanguage {
-    language: string
+    language: string,
     setLanguage: (s:string) => void
 }
 
 const NavigationLanguage = ({language, setLanguage}:INavLanguage):ReactElement => {
 
     const [isLanguageOpen, setIsLanguageOpen] = useState<boolean>(false);
-    const handleOpenLanguage = () => {
+    const handleOpenLanguage = ():void => {
         setIsLanguageOpen(!isLanguageOpen)
     }
 
@@ -20,7 +20,7 @@ const NavigationLanguage = ({language, setLanguage}:INavLanguage):ReactElement =
         <div className="nav__language" onClick={handleOpenLanguage}>
             {getLanguage(language)} {isLanguageOpen ?
                 <> <div className="symbol"><Icon icon="tabler:chevron-up" width="32" height="32" /></div> <div className="nav__language-drop">
-                    {Object.keys(languages.navigation).map((item, index) => <div className="nav__language-dropItem" key={index} onClick={() => setLanguage(item)}> {getLanguage(item)} </div>)}
+                    {Object.keys(pagesAndRoutes.navigation).map((item, index) => <div className="nav__language-dropItem" key={index} onClick={() => setLanguage(item)}> {getLanguage(item)} </div>)}
                 </div></>
                 : <div className="symbol"><Icon icon="tabler:chevron-down" width="32" height="32" /></div>}
         </div>

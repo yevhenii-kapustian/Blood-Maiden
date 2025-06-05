@@ -9,10 +9,10 @@ const Navigation = (): ReactElement => {
     const [language, setLanguage] = useState<string>('en')
     const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
-    const handleMobileMenu = () => {
+    const handleMobileMenu = ():void => {
         setMobileOpen(!mobileOpen);
     }
-    const handleSetLanguage = (value: string) => {
+    const handleSetLanguage = (value: string):void => {
         setLanguage(value);
     }
 

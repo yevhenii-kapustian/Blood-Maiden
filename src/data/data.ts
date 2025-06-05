@@ -1,4 +1,4 @@
-export const languages = {
+export const pagesAndRoutes = {
     navigation: {
         desktop: {
             pages: ['home', 'media', 'about', 'content creators'],

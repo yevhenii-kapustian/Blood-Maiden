@@ -1,4 +1,4 @@
-import { languages } from "@/data/data"
+import { pagesAndRoutes } from "@/data/data"
 
     export const getLanguage = (s: string): string => {
         switch (s) {
@@ -13,19 +13,19 @@ import { languages } from "@/data/data"
     export const getPages = (version: string): string[] => {
         switch (version) {
             case 'desktop':
-                return languages.navigation.desktop.pages;
+                return pagesAndRoutes.navigation.desktop.pages;
             case 'mobile':
-                return languages.navigation.mobile.pages;
-            default: return languages.navigation.desktop.pages;
+                return pagesAndRoutes.navigation.mobile.pages;
+            default: return pagesAndRoutes.navigation.desktop.pages;
         }
     }
     
     export const getRoutes = (location: string): string[] => {
         switch (location) {
             case 'desktop':
-                return languages.navigation.desktop.routes;
+                return pagesAndRoutes.navigation.desktop.routes;
             case 'mobile':
-                return languages.navigation.mobile.routes;
-            default: return languages.navigation.mobile.routes;
+                return pagesAndRoutes.navigation.mobile.routes;
+            default: return pagesAndRoutes.navigation.mobile.routes;
         }
     }
