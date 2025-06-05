@@ -19,7 +19,7 @@ export const gameSettings = new Map<string, GameTextsArray>([
 ])
 
 export const gameCreators = new Map<string, GameCreators[]>([
-    ['management:', [
+    ['management', [
         {
             name: "Daniella Scruggs",
             role: "Game Producer Manager",
