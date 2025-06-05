@@ -167,7 +167,7 @@
 
         &-links {
             @include flexCenter();
-            flex-direction: center;
+            flex-direction: column;
             height: 35%;
             justify-content: space-between;
         }
