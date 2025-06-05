@@ -1,0 +1,14 @@
+@import '../../styles/mixins';
+
+.header {
+    background-color: black;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+
+    @include responsive-custom("768px") {
+        justify-content: end;
+        height: 44px;
+    }
+}
