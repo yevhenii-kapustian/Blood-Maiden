@@ -7,7 +7,6 @@
     font-size: 32px;
     text-transform: uppercase;
 
-
     @include responsive-custom("768px") {
         display: none;
     }
@@ -29,8 +28,6 @@
             &:hover {
                 color: #FF0000;
             }
-
-
         }
 
         &.disable:hover {
@@ -102,7 +99,6 @@
         }
 
         &-dropItem {
-
             border-bottom: 1px solid #fff;
             margin-left: 5px;
 
@@ -133,7 +129,6 @@
             position: fixed;
             width: 100%;
             height: 100vh;
-
             top: 42px;
             left: 0;
             background-color: #000;
@@ -172,5 +167,4 @@
             justify-content: space-between;
         }
     }
-
 }
