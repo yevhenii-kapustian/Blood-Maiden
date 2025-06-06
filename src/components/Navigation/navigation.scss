@@ -52,7 +52,6 @@
                 width: 100%;
                 background-color: #fff;
                 z-index: 1;
-
             }
 
             &::after {
@@ -105,65 +104,85 @@
                 background-color: lighten($color: (
                         #000000),
                     $amount: 20)
-                }
             }
+            
         }
     }
 
-    //Mobile
-    .mobileNav {
-        display: none;
-        color: #fff;
-        margin-right: 24px;
-        gap: 20px;
-        font-size: 32px;
-        text-transform: uppercase;
+}
 
-        @include responsive-custom("768px") {
-            display: flex;
-            position: fixed;
-        }
+//Mobile
+.mobileNav {
+    display: none;
+    color: #fff;
+    margin-right: 24px;
+    gap: 20px;
+    font-size: 32px;
+    text-transform: uppercase;
 
-        &__background {
-            position: fixed;
+    @include responsive-custom("768px") {
+        display: flex;
+        position: fixed;
+    }
+
+    &__burgerIcon {
+        z-index: 2;
+    }
+
+    &__background {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        background-color: #000;
+        @include flexCenter;
+        flex-direction: column;
+        overflow-y: auto;
+
+    &-decoreLower {
+        width: 100%;
+        display: flex;
+        transform: rotateZ(180deg);
+    }
+
+    &-decoreUpper {
+        width: 100%;
+        display: flex;
+    }
+
+    &-container {
+        width: 100%;
+        min-height: 0;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        flex-direction: column;
+
+        &__items {
             width: 100%;
-            height: 100vh;
-            top: 42px;
-            left: 0;
-            background-color: #000;
-            @include flexCenter(
-        );
-
-        &-decoreLower {
-            position: absolute;
-            transform: rotateZ(180deg);
-            right: 0;
-            top: calc(100% - 174px);
-        }
-
-        &-decoreUpper {
-            position: absolute;
-            top: -43px;
-            left: 0;
-        }
-
-        &-container {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            flex-direction: column;
-        }
-
-        &-logo {
-            width: 100%;
-            height: auto;
-        }
-
-        &-links {
-            @include flexCenter();
-            flex-direction: column;
-            height: 35%;
-            justify-content: space-between;
         }
     }
+
+    &-logo {
+        width: 100%;
+        
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: none;
+        }
+    }
+
+    &-links {
+        width: 100%;
+        @include flexCenter;
+        flex-direction: column;
+        gap: 24px;
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+}
+    
 }
