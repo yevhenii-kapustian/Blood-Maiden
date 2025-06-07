@@ -18,7 +18,7 @@ export default function LowerHome() {
     <section className={styles.lowerHome}>
       <div className={styles.overlay}>
         <div className={styles.content}>
-          {/* Desktop layout */}
+          {/* Desktop Layout */}
           <div className={styles.desktopOnly}>
             <div className={styles.title}>
               <p>THE PAST ISN’T DEAD-IT THIRST FOR REVENGE.</p>
