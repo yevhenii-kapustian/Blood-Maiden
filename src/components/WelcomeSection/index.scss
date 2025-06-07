@@ -1,0 +1,118 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: white;
+}
+
+.hero-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+  max-width: 400px;
+}
+
+.ornate-button {
+  position: relative;
+  width: 420px;
+  height: 160px;
+  cursor: pointer;
+  margin-left: -70px;
+
+  // Hover effects
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover .button-fill {
+    box-shadow: 0 0 25px red, 0 0 40px crimson, 0 0 60px darkred;
+    transition: box-shadow 0.3s ease;
+    animation: pulseGlow 1.5s infinite;
+  }
+}
+
+.button-frame {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.button-fill {
+  position: absolute;
+  top: 32%;
+  left: 16%;
+  width: 68%;
+  height: 36%;
+  background: radial-gradient(circle at center, #ff1b1b, #800000);
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+  box-shadow: 0 0 20px red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+// Pulse animation (optional)
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 20px red;
+  }
+  50% {
+    box-shadow: 0 0 35px crimson;
+  }
+  100% {
+    box-shadow: 0 0 20px red;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .ornate-button {
+    width: 300px;
+    height: 110px;
+    margin-left: 0;
+  }
+
+  .button-fill {
+    font-size: 1rem;
+  }
+}
