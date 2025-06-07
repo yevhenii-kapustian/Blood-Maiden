@@ -4,7 +4,6 @@
 .media {
 
     &__intro {
-
         display: flex;
         flex-direction: column;
         background-color: black;
@@ -55,7 +54,6 @@
             @include responsive-media-m {
                 font-size: 16px;
             }
-
         }
     }
 }
