@@ -3,8 +3,7 @@ import { ReactElement, useState } from "react";
 import './navigation.scss'
 import NavigationItem from "./NavigationItem";
 import { getPages, getRoutes } from "@/utils/functions";
-import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
-import Image from "next/image";
+import { Icon } from "@iconify-icon/react/dist/iconify.mjs"; 
 
 const Navigation = (): ReactElement => {
     const [language, setLanguage] = useState<string>('en')
@@ -26,7 +25,7 @@ const Navigation = (): ReactElement => {
 
             </nav>
             <nav className="mobileNav" onClick={handleMobileMenu}>
-                <Icon className="mobileNav__burgerIcon" icon="material-symbols:menu-rounded" width="42" height="42" />
+                {!mobileOpen ? <Icon className="mobileNav__burgerIcon" icon="material-symbols:menu-rounded" width="42" height="42"/> : <Icon className="mobileNav__burgerIcon" icon="line-md:menu-to-close-transition" width="42" height="42"/>}
 
                 {mobileOpen &&
                     <div className="mobileNav__background">
