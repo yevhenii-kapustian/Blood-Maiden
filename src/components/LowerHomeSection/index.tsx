@@ -8,11 +8,11 @@ import { gameFeatures, gameInformation, gameSettings } from '@/data/data';
 export default function LowerHome() {
   const [activeTab, setActiveTab] = useState<'features' | 'about' | 'controls'>('features');
 
-  const features = gameFeatures.get('title')?.text || [];
-  const subtitles = gameFeatures.get('subtitle')?.text || [];
-  const descriptions = gameInformation.get('description')?.text || [];
-  const keyboard = gameSettings.get('keyboard')?.text || [];
-  const controller = gameSettings.get('controller')?.text || [];
+  const features: string[] = gameFeatures.get('title')?.text || [];
+  const subtitles: string[] = gameFeatures.get('subtitle')?.text || [];
+  const descriptions: string[] = gameInformation.get('description')?.text || [];
+  const keyboard: string[] = gameSettings.get('keyboard')?.text || [];
+  const controller: string[] = gameSettings.get('controller')?.text || [];
 
   return (
     <section className={styles.lowerHome}>
@@ -53,7 +53,7 @@ export default function LowerHome() {
                 />
                 <h3>GAME FEATURES</h3>
                 <ul>
-                  {features.map((feature, idx) => (
+                  {features.map((feature: string, idx: number) => (
                     <li key={idx}>
                       <strong>{feature}</strong> <br /> {subtitles[idx] || ''}
                     </li>
@@ -81,7 +81,7 @@ export default function LowerHome() {
                 />
                 <h3>WHAT IS BLOOD MAIDEN?</h3>
                 <ul>
-                  {descriptions.map((desc, idx) => (
+                  {descriptions.map((desc: string, idx: number) => (
                     <li key={idx}>{desc}</li>
                   ))}
                 </ul>
@@ -89,14 +89,14 @@ export default function LowerHome() {
                 <h3>CONTROL SETTINGS</h3>
                 <p><strong>Keyboard:</strong></p>
                 <ul>
-                  {keyboard.map((line, idx) => (
+                  {keyboard.map((line: string, idx: number) => (
                     <li key={idx}>{line}</li>
                   ))}
                 </ul>
 
                 <p><strong>Controller:</strong></p>
                 <ul>
-                  {controller.map((line, idx) => (
+                  {controller.map((line: string, idx: number) => (
                     <li key={idx}>{line}</li>
                   ))}
                 </ul>
@@ -107,10 +107,10 @@ export default function LowerHome() {
           {/* Mobile layout */}
           <div className={styles.mobileOnly}>
             <div className={styles.buttonGroup}>
-              {['about', 'features', 'controls'].map((tab) => (
+              {(['about', 'features', 'controls'] as const).map((tab) => (
                 <button
                   key={tab}
-                  onClick={() => setActiveTab(tab as typeof activeTab)}
+                  onClick={() => setActiveTab(tab)}
                   className={activeTab === tab ? styles.active : ''}
                 >
                   <span>
@@ -130,7 +130,7 @@ export default function LowerHome() {
                 <>
                   <h3>Game Features</h3>
                   <ul>
-                    {features.map((feature, idx) => (
+                    {features.map((feature: string, idx: number) => (
                       <li key={idx}>
                         <strong>{feature}</strong> <br /> {subtitles[idx] || ''}
                       </li>
@@ -143,7 +143,7 @@ export default function LowerHome() {
                 <>
                   <h3>What is Blood Maiden?</h3>
                   <ul>
-                    {descriptions.map((desc, idx) => (
+                    {descriptions.map((desc: string, idx: number) => (
                       <li key={idx}>{desc}</li>
                     ))}
                   </ul>
@@ -155,13 +155,13 @@ export default function LowerHome() {
                   <h3>Control Settings</h3>
                   <p><strong>Keyboard:</strong></p>
                   <ul>
-                    {keyboard.map((line, idx) => (
+                    {keyboard.map((line: string, idx: number) => (
                       <li key={idx}>{line}</li>
                     ))}
                   </ul>
                   <p><strong>Controller:</strong></p>
                   <ul>
-                    {controller.map((line, idx) => (
+                    {controller.map((line: string, idx: number) => (
                       <li key={idx}>{line}</li>
                     ))}
                   </ul>
