@@ -1,0 +1,61 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.media {
+
+    &__intro {
+
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        box-shadow: 0 0 20px 30px rgba(0, 0, 0, 0.608);
+        justify-content: center;
+        align-items: center;
+        text-transform: center;
+        padding: 0 5rem;
+
+        @include responsive-media-m {
+            padding: 0;
+            box-shadow: 0 0 15px 20px rgba(0, 0, 0, 1);
+        }
+
+        &-header {
+            padding-top: 1.5rem;
+            font-size: 64px;
+            margin-bottom: .3rem;
+            font-family: $font_crimson-text;
+            font-weight: $font-weight-normal;
+            color: $color-light-red;
+
+            @include responsive-media-l {
+                font-size: 24px;
+            }
+
+            @include responsive-media-m {
+                font-size: 20px;
+            }
+
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-transform: center;
+            color: #fff;
+            font-size: 48px;
+            gap: 10px;
+            padding-bottom: 2rem;
+            font-family: $font_crimson-pro;
+
+            @include responsive-media-l {
+                font-size: 28px;
+            }
+
+            @include responsive-media-m {
+                font-size: 16px;
+            }
+
+        }
+    }
+}

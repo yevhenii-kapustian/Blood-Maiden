@@ -1,0 +1,63 @@
+.media {
+    &__background {
+        background-color: black;
+        background-image: url('../../../public/forestdarkblue.webp');
+        background-size: cover;
+        background-repeat: no-repeat center;
+        box-shadow: inset 0 0 80px 30px rgba(0, 0, 0, 0.8);
+        display: flex;
+
+        @media screen and (max-width: 450px) {
+            & {
+                background-size: contain;
+            }
+        }
+    }
+
+    .trailer {
+
+        flex: 1;
+        display: flex;
+        z-index: 0;
+        position: relative;
+
+        &__border,
+        &__frame {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            flex: 1;
+
+        }
+
+        &__video {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            aspect-ratio: 16 / 9;
+            width: 55%;
+            border: none;
+            z-index: 3;
+            box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.581);
+        }
+
+        &__frost {
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            transform: translate(-50%, -50%);
+            aspect-ratio: 16 / 10;
+            width: 86%;
+            backdrop-filter: blur(8px);
+            z-index: 0;
+
+        }
+
+        &__frame {
+            @media screen and (max-width: 450px) {
+                content: url('../../../public/mobileBloodFrame.png');
+            }
+        }
+    }
+}
