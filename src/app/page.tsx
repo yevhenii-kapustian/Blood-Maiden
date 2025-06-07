@@ -1,3 +1,8 @@
+import WelcomeSection from '@/components/WelcomeSection';
 export default function Home() {
-  return <div>Hello! hej</div>;
+  return (
+    <div>
+      <WelcomeSection />
+    </div>
+  )
 }
