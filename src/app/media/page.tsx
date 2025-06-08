@@ -1,6 +1,13 @@
+import MediaIntroduction from '@/components/MediaIntroduction';
+import MediaTrailerSection from '@/components/MediaTrailerSection';
+import './media.scss'
+
 const Media = () => {
     return (
-        <div>MEDIA PAGE</div>
+        <div className="media">
+            <MediaTrailerSection />
+            <MediaIntroduction />
+        </div>
     )
 }
 

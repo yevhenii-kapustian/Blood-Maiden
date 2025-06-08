@@ -1,6 +1,6 @@
 @mixin responsive-mobile {
     @media screen and (min-width: $breakpoint-mobile) {
-        @content;
+        @content
     }
 }
 
@@ -20,4 +20,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin responsive-media-m {
+    @media screen and (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin responsive-media-l {
+    @media screen and (max-width: 1150px) {
+        @content;
+    }
 }
