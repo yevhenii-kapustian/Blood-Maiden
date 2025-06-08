@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import styles from './LowerHome.module.scss';
 import Image from 'next/image';
+import './LowerHome.scss';
 import { gameFeatures, gameInformation, gameSettings } from '@/data/data';
 
 export default function LowerHome() {
@@ -15,18 +15,18 @@ export default function LowerHome() {
   const controller: string[] = gameSettings.get('controller')?.text || [];
 
   return (
-    <section className={styles.lowerHome}>
-      <div className={styles.overlay}>
-        <div className={styles.content}>
+    <section className="lowerHome">
+      <div className="overlay">
+        <div className="content">
           {/* Desktop Layout */}
-          <div className={styles.desktopOnly}>
-            <div className={styles.title}>
+          <div className="desktopOnly">
+            <div className="title">
               <p>THE PAST ISN’T DEAD-IT THIRST FOR REVENGE.</p>
               <p>SLAY MONSTERS. KILL THE KING’S MEN.</p>
               <p>UNCOVER FORBIDDEN POWER. BECOME A LEGEND.</p>
             </div>
 
-            <div className={styles.download}>
+            <div className="download">
               <span>DOWNLOAD NOW ON</span>
               <a
                 href="https://futuregames.itch.io/blood-maiden"
@@ -42,14 +42,14 @@ export default function LowerHome() {
               </a>
             </div>
 
-            <div className={styles.threeColumnGrid}>
-              <div className={styles.column}>
+            <div className="threeColumnGrid">
+              <div className="column">
                 <Image
                   src="/images/ChatGPT Image 1 juni 2025 13_56_15 2.png"
                   alt="Gameplay Left"
                   width={200}
                   height={200}
-                  className={styles.sideImage}
+                  className="sideImage"
                 />
                 <h3>GAME FEATURES</h3>
                 <ul>
@@ -61,23 +61,23 @@ export default function LowerHome() {
                 </ul>
               </div>
 
-              <div className={styles.column}>
+              <div className="column">
                 <Image
                   src="/images/STAMP - Logo.png"
                   alt="Stamp Logo"
                   width={150}
                   height={150}
-                  className={styles.middleImage}
+                  className="middleImage"
                 />
               </div>
 
-              <div className={styles.column}>
+              <div className="column">
                 <Image
                   src="/images/ChatGPT Image 1 juni 2025 13_56_15 2.png"
                   alt="Gameplay Right"
                   width={200}
                   height={200}
-                  className={styles.sideImage}
+                  className="sideImage"
                 />
                 <h3>WHAT IS BLOOD MAIDEN?</h3>
                 <ul>
@@ -105,13 +105,13 @@ export default function LowerHome() {
           </div>
 
           {/* Mobile layout */}
-          <div className={styles.mobileOnly}>
-            <div className={styles.buttonGroup}>
+          <div className="mobileOnly">
+            <div className="buttonGroup">
               {(['about', 'features', 'controls'] as const).map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={activeTab === tab ? styles.active : ''}
+                  className={activeTab === tab ? 'active' : ''}
                 >
                   <span>
                     {tab === 'about'
@@ -120,12 +120,12 @@ export default function LowerHome() {
                       ? 'GAME FEATURES'
                       : 'CONTROL SETTINGS'}
                   </span>
-                  <span className={styles.arrow}>›</span>
+                  <span className="arrow">›</span>
                 </button>
               ))}
             </div>
 
-            <div className={styles.tabContent}>
+            <div className="tabContent">
               {activeTab === 'features' && (
                 <>
                   <h3>Game Features</h3>
@@ -169,15 +169,15 @@ export default function LowerHome() {
               )}
             </div>
 
-            <div className={styles.title}>
+            <div className="title">
               <p>THE PAST ISN’T DEAD-IT THIRST FOR REVENGE.</p>
               <p>SLAY MONSTERS. KILL THE KING’S MEN.</p>
               <p>UNCOVER FORBIDDEN POWER. BECOME A LEGEND.</p>
             </div>
 
-            <div className={styles.threeColumnGrid}>
+            <div className="threeColumnGrid">
               {['sideImage', 'middleImage', 'sideImage'].map((className, idx) => (
-                <div key={idx} className={styles.column}>
+                <div key={idx} className="column">
                   <Image
                     src={
                       idx === 1
@@ -187,7 +187,7 @@ export default function LowerHome() {
                     alt={idx === 1 ? 'Stamp Logo' : `Gameplay ${idx === 0 ? 'Left' : 'Right'}`}
                     width={idx === 1 ? 150 : 200}
                     height={idx === 1 ? 150 : 200}
-                    className={styles[className]}
+                    className={className}
                   />
                 </div>
               ))}
