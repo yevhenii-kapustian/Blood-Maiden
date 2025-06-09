@@ -8,7 +8,6 @@
     background-color: black;
     padding: 4rem 0;
 
-
     &-title {
         position: relative;
         @include center-flex;
@@ -17,7 +16,6 @@
         img {
             width: 400px;
             height: auto;
-
             @include responsive-media-m {
                 width: 350px;
             }
@@ -102,8 +100,6 @@
                 }
             }
         }
-
-        
     }
 
     &-moreLinks {
