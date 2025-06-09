@@ -1,3 +1,9 @@
-export default function Home() {
-  return <div>Hello! hej</div>;
+import LowerHome from "@/components/LowerHomeSection";
+
+export default function HomePage() {
+  return (
+    <main>
+      <LowerHome />
+    </main>
+  );
 }
