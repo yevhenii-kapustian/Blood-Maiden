@@ -1,3 +1,6 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .media__levels {
     display: flex;
     flex-direction: column;
@@ -15,44 +18,149 @@
         img {
             width: 400px;
             height: auto;
+
+            @include responsive-media-m {
+                width: 350px;
+            }
         }
 
         h2 {
             position: absolute;
-            top: 97px;
+            top: 101px;
             border-radius: 15px;
-            padding: 18px 60px;
+            padding: 15px 42px;
             font-size: 42px;
             color: white;
             background-color: black;
+            text-transform: uppercase;
+
+            @include responsive-media-m {
+                font-size: 34px;
+                top: 88px;
+            }
         }
     }
 
     &-itemsContainer {
-        &__itemsCards {
+        @include responsive-media-l {
+            width: 80%;
+        }
+        &__cards {
+            @include responsive-media-l {
+                display: none;
+            }
             display: flex;
             gap: 30px;
     
             img {
                 width: 30rem;
             }
+
+            &-itemsLevel {
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                &__level {
+                    padding-bottom: 60px;
+                    width: 40%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 16px;
+
+                    h4 {
+                        color: white;
+                        font-size: $indent__l;
+                        text-transform: uppercase;
+                    }
+
+                    a {
+                        padding: 12px 32px;
+                        border: solid 1px #DFB97C;
+                        text-decoration: none;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                }
+            }
         }
+
+    }
+
+    &-cardsMobile {
+        display: none;
+
+        @include responsive-media-l {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem;
+                font-size: $indent__l;
+                text-decoration: none;
+                color: white;
+                background-color: none;
+                border: solid 1px #DFB97C;
+                border-radius: 25px;
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                @include responsive-media-l {
+                    background-color: #152F36;
+                }
+                @include responsive-media-m {
+                    font-size: $indent__base;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        
     }
 
     &-moreLinks {
-        margin-top: 20px;
+        margin-top: 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 16px;
 
+        @include responsive-media-l {
+            margin-top: 16px;
+        }
+
         a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            font-size: $indent__l;
             text-decoration: none;
             color: white;
             background-color: none;
             border: solid 1px #DFB97C;
             width: 100%;
             text-align: center;
+            text-transform: uppercase;
+            @include responsive-media-l {
+                border-radius: 25px;
+                background-color: #152F36;
+            }
+            @include responsive-media-m {
+                font-size: $indent__base;
+                padding: 1rem;
+            }
         }
     }
 }
