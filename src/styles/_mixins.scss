@@ -9,3 +9,36 @@
         @content;
     }
 }
+
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-link($padding: 2rem, $font-size: $indent__l) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding;
+  font-size: $font-size;
+  text-decoration: none;
+  color: white;
+  border: solid 1px #DFB97C;
+  text-transform: uppercase;
+}
+
+@mixin heading($size) {
+  font-size: $size;
+  color: white;
+  text-transform: uppercase;
+}
+
+@mixin overlay-heading {
+  position: absolute;
+  border-radius: 15px;
+  background-color: black;
+  padding: 15px 42px;
+  color: white;
+  text-transform: uppercase;
+}

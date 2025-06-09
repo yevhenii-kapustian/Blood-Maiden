@@ -11,8 +11,7 @@
 
     &-title {
         position: relative;
-        display: flex;
-        justify-content: center;
+        @include center-flex;
 
 
         img {
@@ -25,14 +24,9 @@
         }
 
         h2 {
-            position: absolute;
+            @include overlay-heading;
+            @include heading(42px);
             top: 101px;
-            border-radius: 15px;
-            padding: 15px 42px;
-            font-size: 42px;
-            color: white;
-            background-color: black;
-            text-transform: uppercase;
 
             @include responsive-media-m {
                 font-size: 34px;
@@ -58,12 +52,10 @@
 
             &-itemsLevel {
                 position: relative;
-                display: flex;
-                justify-content: center;
+                @include center-flex;
 
                 &__level {
                     padding-bottom: 60px;
-                    width: 40%;
                     height: 100%;
                     position: absolute;
                     bottom: 0;
@@ -74,17 +66,11 @@
                     gap: 16px;
 
                     h4 {
-                        color: white;
-                        font-size: $indent__l;
-                        text-transform: uppercase;
+                        @include heading($indent__l);
                     }
 
                     a {
-                        padding: 12px 32px;
-                        border: solid 1px #DFB97C;
-                        text-decoration: none;
-                        color: white;
-                        text-transform: uppercase;
+                        @include button-link(12px 32px, $indent__l);
                     }
                 }
             }
@@ -103,19 +89,10 @@
             gap: 16px;
 
             a {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 2rem;
-                font-size: $indent__l;
-                text-decoration: none;
-                color: white;
-                background-color: none;
-                border: solid 1px #DFB97C;
+                @include button-link;
                 border-radius: 25px;
                 width: 100%;
                 text-align: center;
-                text-transform: uppercase;
                 @include responsive-media-l {
                     background-color: #152F36;
                 }
@@ -130,10 +107,9 @@
     }
 
     &-moreLinks {
+        @include center-flex;
         margin-top: 3rem;
-        display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 16px;
 
         @include responsive-media-l {
@@ -141,18 +117,9 @@
         }
 
         a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem;
-            font-size: $indent__l;
-            text-decoration: none;
-            color: white;
-            background-color: none;
-            border: solid 1px #DFB97C;
+            @include button-link;
             width: 100%;
             text-align: center;
-            text-transform: uppercase;
             @include responsive-media-l {
                 border-radius: 25px;
                 background-color: #152F36;
