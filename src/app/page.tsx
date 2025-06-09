@@ -1,3 +1,9 @@
+import MediaLevelsSection from "@/components/MediaLevelsSection"
+
 export default function Home() {
-  return <div>Hello! hej</div>;
+  return (
+    <div>
+      <MediaLevelsSection/>
+    </div>
+  )
 }
