@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.about {
+
+    &__intro {
+        background-image: url('../../../public/graveyard.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include responsive-media-m {
+            height: 35%;
+        }
+    }
+
+    &__text {
+
+        color: #fff;
+
+    }
+
+}
