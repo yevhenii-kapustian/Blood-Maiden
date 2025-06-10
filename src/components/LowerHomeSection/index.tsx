@@ -85,7 +85,13 @@ export default function LowerHome() {
                     <li key={idx}>{desc}</li>
                   ))}
                 </ul>
-
+                <Image
+                  src="/images/ChatGPT Image 1 juni 2025 13_56_15 2.png"
+                  alt="Gameplay Right"
+                  width={200}
+                  height={200}
+                  className="sideImage"
+                />
                 <h3>CONTROL SETTINGS</h3>
                 <p><strong>Keyboard:</strong></p>
                 <ul>
