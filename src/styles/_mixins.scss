@@ -1,3 +1,9 @@
+@mixin responsive-mobile {
+    @media screen and (min-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
 @mixin responsive-media-m {
     @media screen and (max-width: 800px) {
         @content;
@@ -41,4 +47,22 @@
   padding: 15px 42px;
   color: white;
   text-transform: uppercase;
+}
+
+@mixin responsive-tablet {
+    @media screen and (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin responsive-custom($max-width) {
+    @media screen and (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
