@@ -1,6 +1,9 @@
+@import '../../styles/mixins';
+
 .aboutmain {
     background-image: url('/bg-imag.png');
     color: white;
+    display: flex;
     padding: 30px;
     &__container {
          display: flex;
@@ -8,12 +11,21 @@
         align-items: center;
         justify-content: space-around;
         gap: 16px;
+        @include responsive-media-m {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
     &__content {
         font-size: 24px;
     }
     &__title {
         padding-bottom: 10px; 
+         @include responsive-media-m {
+            text-align: center;
+        }
     }
     &__image {
         display: inline-block;
