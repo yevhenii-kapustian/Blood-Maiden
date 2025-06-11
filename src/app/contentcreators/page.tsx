@@ -1,7 +1,20 @@
-const Contentcreators = () => {
+import ContentCreators from "@/components/Creators";
+
+/*const ContentCreators = () => {
     return (
-        <div>CONTENT CREATORS PAGE</div>
+        <div>
+             <ContentCreators />
+        </div>
     )
 }
 
-export default Contentcreators;
+export default ContentCreators ;*/
+
+
+export default function Home() {
+  return (
+    <div>
+    <ContentCreators />
+    </div>
+  );
+}
