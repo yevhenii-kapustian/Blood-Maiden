@@ -120,6 +120,7 @@
     gap: 20px;
     font-size: 32px;
     text-transform: uppercase;
+    z-index: 10;
 
     @include responsive-custom("768px") {
         display: flex;
