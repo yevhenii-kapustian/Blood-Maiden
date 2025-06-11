@@ -1,5 +1,24 @@
 import { GameTextsArray, GameCreators } from "@/types/type";
 
+export const pagesAndRoutes = {
+    navigation: {
+        desktop: {
+            pages: ['home', 'media', 'about', 'content creators'],
+            routes: ['home', 'media', 'about', 'content creators']
+        },
+        mobile: {
+            pages: ['home', 'media', 'about', 'creators'],
+            routes: ['home', 'media', 'about', 'content creators']
+        }
+    }
+}
+
+export const mediaIntroTexts:string[] = ['Play as a resurrected maiden in a',
+    'cursed world-dashing, slashing, and bleeding',
+    'through haunted ruins to face the immortal king.',
+     "You won't win. Not yet.", "But you'll die trying." 
+];
+
 export const headerLinks = new Map<string, string[]>([
     ['links', ["home", "media", "about", "content creators"]]
 ]);
@@ -98,22 +117,3 @@ export const gameCreators = new Map<string, GameCreators[]>([
         }
     ]]
 ])
-
-export const pagesAndRoutes = {
-    navigation: {
-        desktop: {
-            pages: ['home', 'media', 'about', 'content creators'],
-            routes: ['home', 'media', 'about', 'content creators']
-        },
-        mobile: {
-            pages: ['home', 'media', 'about', 'creators'],
-            routes: ['home', 'media', 'about', 'content creators']
-        }
-    }
-}
-
-export const mediaIntroTexts:string[] = ['Play as a resurrected maiden in a',
-    'cursed world-dashing, slashing, and bleeding',
-    'through haunted ruins to face the immortal king.',
-     "You won't win. Not yet.", "But you'll die trying." ]
-
