@@ -32,6 +32,7 @@ export default function LowerHome() {
                 href="https://futuregames.itch.io/blood-maiden"
                 target="_blank"
                 rel="noopener noreferrer"
+                className='itchioButton'
               >
                 <Image
                   src="/images/ITCHIO, CTA-link to website.png"
