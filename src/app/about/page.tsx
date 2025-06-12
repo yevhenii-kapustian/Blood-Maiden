@@ -1,6 +1,11 @@
+import AboutIntro from "@/components/AboutIntro";
+import './about.scss'
+
 const About = () => {
     return (
-        <div>ABOUT PAGE</div>
+        <div className="about">
+            <AboutIntro />
+        </div>
     )
 }
 
