@@ -36,10 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}  ${CrimsonPro.variable} ${CrimsonText.variable}`}>
-
-        <div>Hello</div>
         {children}
-        <div>Hello</div>
       </body>
     </html>
   );
