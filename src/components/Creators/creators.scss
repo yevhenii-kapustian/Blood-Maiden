@@ -1,4 +1,4 @@
-credits-section {
+/*credits-section {
   background: url('../../../public/Lamp1.png') no-repeat center center;
   background-size: cover;
   padding: 5rem 1rem;
@@ -6,4 +6,29 @@ credits-section {
   display: flex;
   justify-content: center;
   align-items: center;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.creators  {
+   &__background {
+      background: url('../../../public/Lamp1.png') no-repeat;
+      background-size: cover;
+      flex: 1;
+      color: beige;
+   }
 }
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Cinzel', serif;
+    //margin-bottom: 2.5rem;
+    color: whitesmoke;
+    //margin-top: 2.5rem;
+  }
+
+.link {
+ &:link, &:active, &:visited {
+  color: #115566;
+ }
+}  
