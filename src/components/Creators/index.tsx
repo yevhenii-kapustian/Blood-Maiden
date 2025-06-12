@@ -3,62 +3,63 @@ import React from 'react';
 import './creators.scss';
 import { gameCreators } from '@/data/data';
 
+
+
 const Creators = () => {
   return (
-    <div className="creators-container">
-      <h2 className="section-title">CONTENT CREATORS</h2>
+    <div className="creators-container">      
+    <h2 className="section-title">CONTENT CREATORS</h2>
 
-      <div className='creators-grid'>
-        <h3 className="management">MANAGEMENT</h3>
+      <div className="creators-grid">
         <ul>
+        <h3 >MANAGEMENT</h3>
         {gameCreators.get("management")?.map((item, index) => (
         <li key={index}>
         <ul>
-        <li>Name: {item.name}</li>
-        <li>Link: <a href={item.link}>{item.link}</a></li>
-        <li>Role: {item.role}</li>
+        <li >{item.name} - {item.role}</li>
+        <li className="list-menu"><a href={item.link}>{item.name} | LinkedIn </a></li>
         </ul>
         </li>
        ))}
        </ul>
 
 
-      <h3 className="designers">DESIGNERS</h3>
+      
       <ul>
+       <h3 >DESIGNERS</h3>
       {gameCreators.get("designers")?.map((item, index) => (
-      <li key={index}>
+        <li key={index}>
       <ul>
-        <li>Name: {item.name}</li>
-        <li>Link: <a href={item.link} className='link'>{item.link}</a></li>
-        <li>Role: {item.role}</li>
+        <li>{item.name} - {item.role}</li>
+        <li className="list-menu"><a href={item.link} className="red">{item.name} | LinkedIn</a></li>
       </ul>
      </li>
       ))}
     </ul>
 
 
-    <h3 className="artist">ARTIST</h3>
+    
       <ul>
+      <h3 >ARTIST</h3>
       {gameCreators.get("artist")?.map((item, index) => (
       <li key={index}>
       <ul>
-        <li>Name: {item.name}</li>
-        <li>Link: <a href={item.link}>{item.link}</a></li>
-        <li>Role: {item.role}</li>
+        <li>{item.name} - {item.role}</li>
+        <li className="list-menu"><a href={item.link}>{item.name} | LinkedIn</a></li>
       </ul>
      </li>
       ))}
     </ul>
 
 
-    <h3 className="programmers">PROGRAMMERS</h3>
+    
       <ul>
+      <h3 >PROGRAMMERS</h3>
       {gameCreators.get("programmers")?.map((item, index) => (
       <li key={index}>
       <ul>
-        <li>Name: {item.name}</li>
-        <li>Link: <a href={item.link}>{item.link}</a></li>
-        <li>Role: {item.role}</li>
+        <li>{item.name} - {item.role}</li>
+        <li className="list-menu"><a href={item.link}>{item.name} | LinkedIn</a></li>
       </ul>
      </li>
       ))}
