@@ -1,27 +1,13 @@
-/*credits-section {
-  background: url('../../../public/Lamp1.png') no-repeat center center;
-  background-size: cover;
-  padding: 5rem 1rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-
 .creators  {  
    &__background {
       background: url('../../../public/Lamp1.png') no-repeat;
       background-size:cover;
       display: flex;
       flex-direction: column;
-      //align-content: center;
       justify-content: center;
       align-items: center;
-      //height: 100vh;
       min-height: 100%;
-      //flex: 1;
       color: beige;
-      //height: 3500px;
    }
 }
 
@@ -31,7 +17,7 @@
     font-family: 'Cinzel', serif;
     //margin-bottom: 2.5rem;
     color: whitesmoke;
-    //margin-top: 2.5rem;
+    margin-top: 2.5rem;
   }
 
 .link {
@@ -54,12 +40,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 5rem;
   padding: 2rem;
   max-width: 1200px;
   justify-content: center;
- // margin-top: 20rem;
-  //background-color: rgba(14, 12, 2, 0.5);
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -78,4 +62,9 @@
 
 .grid-card {
   border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.grid-item {
+  padding-left: 1.8rem;
 }
