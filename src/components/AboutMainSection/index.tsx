@@ -1,4 +1,4 @@
-import './aboutmainsection.scss'
+import './aboutSection.scss'
 const AboutMainSection = () => {
     return(
          <section className="aboutmain" aria-labelledby="aboutmain-title">
