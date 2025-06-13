@@ -1,11 +1,15 @@
-import AboutIntro from "@/components/AboutIntro";
 import './about.scss'
+import AboutIntro from "@/components/AboutIntro";
+import AboutGame from "@/components/AboutGame";
 
 const About = () => {
     return (
-        <div className="about">
-            <AboutIntro />
-        </div>
+        <>
+            <div className="about">
+                <AboutIntro />
+                <AboutGame />
+            </div>
+        </>
     )
 }
 
