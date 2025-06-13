@@ -4,10 +4,12 @@ import './about.scss'
 
 const About = () => {
     return (
-        <div className="about">
-            <AboutIntro />
-            <AboutMainSection />
-        </div>
+        <>
+            <div className="about">
+                <AboutIntro />
+            </div>
+            {/* <AboutMainSection /> */}
+        </>
     )
 }
 
