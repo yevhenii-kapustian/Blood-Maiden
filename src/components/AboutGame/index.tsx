@@ -1,5 +1,5 @@
-import './aboutmainsection.scss'
-const AboutMainsection = () => {
+import './aboutGame.scss'
+const AboutGame = () => {
     return(
          <section className="aboutmain" aria-labelledby="aboutmain-title">
       <div className="aboutmain__container">
@@ -37,4 +37,4 @@ const AboutMainsection = () => {
     )
 }
 
-export default AboutMainsection
+export default AboutGame;

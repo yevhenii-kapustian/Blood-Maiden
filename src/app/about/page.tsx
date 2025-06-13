@@ -1,14 +1,16 @@
-import AboutMainsection from "@/components/AboutMainsection";
+import './about.scss'
 import AboutIntro from "@/components/AboutIntro";
-import "./about.scss";
+import AboutGame from "@/components/AboutGame";
 
 const About = () => {
-  return (
-    <div className="about">
-      <AboutIntro />
-      <AboutMainsection />
-    </div>
-  );
-};
+    return (
+        <>
+            <div className="about">
+                <AboutIntro />
+                <AboutGame />
+            </div>
+        </>
+    )
+}
 
 export default About;
