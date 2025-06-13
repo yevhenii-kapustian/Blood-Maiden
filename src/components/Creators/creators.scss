@@ -7,16 +7,21 @@
   justify-content: center;
   align-items: center;
 }*/
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
 .creators  {  
    &__background {
       background: url('../../../public/Lamp1.png') no-repeat;
       background-size:cover;
       display: flex;
-      flex: 1;
+      flex-direction: column;
+      //align-content: center;
+      justify-content: center;
+      align-items: center;
+      //height: 100vh;
+      min-height: 100%;
+      //flex: 1;
       color: beige;
-      height: 3500px;
+      //height: 3500px;
    }
 }
 
@@ -53,12 +58,24 @@
   padding: 2rem;
   max-width: 1200px;
   justify-content: center;
-  margin-top: 20rem;
-  background-color: rgba(14, 12, 2, 0.5);
+ // margin-top: 20rem;
+  //background-color: rgba(14, 12, 2, 0.5);
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
   }
+}
+
+.creators-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(14, 12, 2, 0.5);
+}
+
+.grid-card {
+  border-left: 1px solid white;
 }
