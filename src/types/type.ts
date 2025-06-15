@@ -7,3 +7,8 @@ export type GameCreators = {
     role: string,
     link: string
 }
+
+export type Monster = {
+  name: string,
+  image: string,
+}

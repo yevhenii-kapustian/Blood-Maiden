@@ -1,22 +1,7 @@
 // pages/index.tsx
 import Head from 'next/head';
 import './monsterCodex.scss';
-
-type Monster = {
-  name: string;
-  image: string;
-};
-
-const monsters: Monster[] = [
-  { name: 'YAMI-CHAN', image: '/images/monsters/yami-chan.png' },
-  { name: 'KRYVAK', image: '/images/monsters/kryvak.png' },
-  { name: 'THE JOKER', image: '/images/monsters/the-joker.png' },
-  { name: 'THORNED BLASPHEMER', image: '/images/monsters/thorned-blasphemer.png' },
-  { name: 'THE BLACK WARDEN', image: '/images/monsters/the-black-warden.png' },
-  { name: 'WENDIGO', image: '/images/monsters/wendigo.png' },
-  { name: 'GOLEM', image: '/images/monsters/golem.png' },
-  { name: 'LYCAN', image: '/images/monsters/lycan.png' },
-];
+import {monsters} from '../../data/data'
 
 export default function MonstersCodex() {
   return (

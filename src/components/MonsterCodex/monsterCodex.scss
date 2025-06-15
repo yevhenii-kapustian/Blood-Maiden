@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@use '../../styles/variables' as *;
 
 .monsters-container {
   background: #0a0a0a;
@@ -6,7 +6,7 @@
   padding: 1rem 2rem;
   padding-left: 2rem;
   min-height: 100vh;
-  font-family: 'Cinzel', serif;
+  font-family: $font_crimson-pro;
   text-align: center;
 }
 
