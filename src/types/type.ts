@@ -11,6 +11,6 @@ export type GameCreators = {
 // Data type for developers 
 export type Developer = {
     name: string;
-    link: string;
+    link?: string;
     image?: string;
 }
