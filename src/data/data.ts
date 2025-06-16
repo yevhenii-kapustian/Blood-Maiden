@@ -113,31 +113,36 @@ export const gameCreators = new Map<string, GameCreators[]>([
             link: "https://www.linkedin.com/in/simon-landin-5b7b272b2/"
         }
     ]],
-     ['frontend Developer', [
+     ['frontend developer', [
         {
             name: "Ankita Singh",
-            role: "developer",
+            role: "Developer",
             link: "https://www.linkedin.com/in/ankita-singh-1a8236185"
         },
         {
-            name: "Andreas Johansson",
-            role: "Artistic Director, Environment Artist",
-            link: "https://www.linkedin.com/in/andreas-johansson-a33422292/"
+            name: "Souad Taki ",
+            role: "Developer",
+            link: "https://www.linkedin.com/in/souad-rondelet-b18873184/"
         },
         {
-            name: "Linnea Norman",
-            role: "Animation",
-            link: "https://www.linkedin.com/in/linnea-norman-128643239/"
+            name: "Tobias Kjernell",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
         },
         {
-            name: "Arpad Pinter",
-            role: "Prop Artist",
-            link: "https://www.linkedin.com/in/arpad-pinter-789555302/"
+            name: "Priyesh Illam",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
         },
         {
-            name: "Marcus Swensån",
-            role: "Character Artist",
-            link: "https://www.linkedin.com/in/marcus-s-92834a2ba/"
+            name: "Yevhenii Kapustian",
+            role: "Developer",
+            link: "https://www.linkedin.com/in/yevhenii-kapustian-ab85a8279/?trk=contact-info"
+        },
+         {
+            name: "Megha Albin",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
         }
     ]],
 ])

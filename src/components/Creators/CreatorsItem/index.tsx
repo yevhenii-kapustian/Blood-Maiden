@@ -7,7 +7,7 @@ interface ICreatorsItem {
 
 const CreatorsItem = ({ creatorsTeam, title }: ICreatorsItem) => {
     return (
-        <div className="gridItem">
+        <div className="grid__item-container">
             <div className="grid-card">
                 <ul className="grid-item">
                     <h3>{title}</h3>

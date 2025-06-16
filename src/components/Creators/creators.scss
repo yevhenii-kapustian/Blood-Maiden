@@ -73,11 +73,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 10rem;
+  gap: 3rem;
   padding: 2rem;
   max-width: 1200px;
   justify-content: center;
-
+  
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -93,6 +93,7 @@
   flex-direction: column;
   background-color: rgba(14, 12, 2, 0.5);
   border: 1px solid hsla(0, 0%, 95%, 0.3);
+  margin: 2rem;
 }
 
 .grid-card {}
@@ -108,5 +109,9 @@
   border-left: 1px solid hsla(0, 0%, 95%, 0.3);
   border-bottom: 1px solid hsla(0, 0%, 95%, 0.3);
   padding-bottom: .5rem;
+
+}
+
+.grid__item-container {
 
 }
