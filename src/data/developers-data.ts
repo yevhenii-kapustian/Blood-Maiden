@@ -2,17 +2,17 @@ import { Developer } from "@/types/type";
 
 const people: Developer[] = [
   {
-    name: "",
-    link: "",
+    name: "Ankita Singh",
+    link: "https://www.linkedin.com/in/ankita-singh-1a8236185",
     image: ""
   },
   {
-    name: "",
-    link: "",
+    name: "Souad Taki",
+    link: "https://www.linkedin.com/in/souad-rondelet-b18873184/",
     image: ""
   },
-  {
-    name: "",
+   {
+    name: "Tobias Kjernell",
     link: "",
     image: ""
   },
@@ -22,8 +22,13 @@ const people: Developer[] = [
     image: ""
   },
   {
-    name: "",
+    name: "Megha Albin",
+    link: "https://www.linkedin.com/in/megha-albin-a485b329a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    image: ""
+  },
+  {
+    name: "PRIYESH ILLAM",
     link: "",
     image: ""
-  }
+  },
 ];
