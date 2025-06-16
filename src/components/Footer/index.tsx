@@ -26,10 +26,10 @@ const Footer = () => {
 
       <div className="bottom">
       <Image src="/Ichio-Footer.png" alt="itch.io" width={24} height={24} />
-      <a href="https://itch.io/">itch.io</a>  
+      <a target='_blank' href="https://itch.io/">itch.io</a>  
       <p className="center">
         © 2025 Group 7 Studios. All Rights Reserved.
-      <a href="https://itch.io/docs/legal/privacy-policy">Privacy Policy</a> | <a href="https://itch.io/docs/legal/terms">Terms Of Use</a>
+      <a target='_blank' href="https://itch.io/docs/legal/privacy-policy">Privacy Policy</a> | <a target='_blank' href="https://itch.io/docs/legal/terms">Terms Of Use</a>
       </p>
       </div>
 
