@@ -39,6 +39,31 @@
             border: none;
             z-index: 3;
             box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.581);
+
+            &-replacer {
+                background-color: black;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                aspect-ratio: 16 / 9;
+                width: 55%;
+                border: none;
+                z-index: 3;
+                box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.581);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                h2 {
+                    font-size: 36px;
+                     @media screen and (max-width: 450px) {
+                        font-size: 24px;
+                     }
+                }
+            }
+
         }
 
         &__frost {
