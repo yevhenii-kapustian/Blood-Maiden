@@ -1,6 +1,15 @@
+import './about.scss'
+import AboutIntro from "@/components/AboutIntro";
+import AboutGame from "@/components/AboutGame";
+
 const About = () => {
     return (
-        <div>ABOUT PAGE</div>
+        <>
+            <div className="about">
+                <AboutIntro />
+                <AboutGame />
+            </div>
+        </>
     )
 }
 
