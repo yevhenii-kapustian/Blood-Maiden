@@ -22,13 +22,19 @@
 
 .link {
  &:link, &:active, &:visited {
-  color: red;
+  color: #115560;
  }
 }  
 
 .list-menu{
-  list-style: none;
-  margin-bottom: 15px;
+  list-style-image: url('../../../public/Vector.png');
+  margin-left:2rem;  
+}
+
+
+.list-menu a{
+  color: #115560;
+  font-size: 1rem;
 }
 
 .creators-grid ul h3{
@@ -40,7 +46,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 5rem;
+  gap: 10rem;
   padding: 2rem;
   max-width: 1200px;
   justify-content: center;
