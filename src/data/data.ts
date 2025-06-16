@@ -78,7 +78,18 @@ export const gameCreators = new Map<string, GameCreators[]>([
             name: "Linnea Norman",
             role: "Animation",
             link: "https://www.linkedin.com/in/linnea-norman-128643239/"
+        },
+        {
+            name: "Arpad Pinter",
+            role: "Prop Artist",
+            link: "https://www.linkedin.com/in/arpad-pinter-789555302/"
+        },
+        {
+            name: "Marcus Swensån",
+            role: "Character Artist",
+            link: "https://www.linkedin.com/in/marcus-s-92834a2ba/"
         }
+
     ]],
     ['programmers', [
         {
