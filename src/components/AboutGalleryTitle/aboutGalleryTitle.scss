@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.aboutGalery {
+    font-family: $font_crimson-text;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    &__title {
+        position: relative;
+        margin: auto;
+        background-image: url("/gallery-frame.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 400px;
+        height: 300px;
+        display: flex;           
+        align-items: center;     
+        justify-content: center;
+        @include responsive-to-small {
+            width: auto;
+        }
+
+        h2 {
+        font-size: 2.5rem;
+        position: absolute;
+        bottom: 120px;
+        text-align: center;
+        border-radius: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: black;
+        color: white;
+        padding: 13px 26px 11px 26px ;
+
+        @include responsive-to-small {
+            padding: 10px 14px 10px 14px;         
+        }
+    }
+}
+}
