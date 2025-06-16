@@ -3,16 +3,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import './LowerHome.scss';
-import { gameFeatures, gameInformation, gameSettings } from '@/data/data';
+import { gameFeaturesPrimary, gameFeaturesSecondary, gameInformation, gameSettings } from '@/data/data';
 
 export default function LowerHome() {
   const [activeTab, setActiveTab] = useState<'features' | 'about' | 'controls'>('features');
 
-  const features: string[] = gameFeatures.get('title')?.text || [];
-  const subtitles: string[] = gameFeatures.get('subtitle')?.text || [];
   const descriptions: string[] = gameInformation.get('description')?.text || [];
-  const keyboard: string[] = gameSettings.get('keyboard')?.text || [];
-  const controller: string[] = gameSettings.get('controller')?.text || [];
 
   return (
     <section className="lowerHome">
@@ -54,9 +50,9 @@ export default function LowerHome() {
                 />
                 <h3>GAME FEATURES</h3>
                 <ul>
-                  {features.map((feature: string, idx: number) => (
+                  {gameFeaturesPrimary.get('title')?.text.map((feature: string, idx: number) => (
                     <li key={idx}>
-                      <strong>{feature}</strong> <br /> {subtitles[idx] || ''}
+                      <strong>{feature}</strong> <br /> {gameFeaturesPrimary.get('subtitle')?.text[idx] || ''}
                     </li>
                   ))}
                 </ul>
@@ -80,31 +76,12 @@ export default function LowerHome() {
                   height={200}
                   className="sideImage"
                 />
-                <h3>WHAT IS BLOOD MAIDEN?</h3>
+                <h3>GAME FEATURES</h3>
                 <ul>
-                  {descriptions.map((desc: string, idx: number) => (
-                    <li key={idx}>{desc}</li>
-                  ))}
-                </ul>
-                <Image
-                  src="/images/ChatGPT Image 1 juni 2025 13_56_15 2.png"
-                  alt="Gameplay Right"
-                  width={200}
-                  height={200}
-                  className="sideImage"
-                />
-                <h3>CONTROL SETTINGS</h3>
-                <p><strong>Keyboard:</strong></p>
-                <ul>
-                  {keyboard.map((line: string, idx: number) => (
-                    <li key={idx}>{line}</li>
-                  ))}
-                </ul>
-
-                <p><strong>Controller:</strong></p>
-                <ul>
-                  {controller.map((line: string, idx: number) => (
-                    <li key={idx}>{line}</li>
+                  {gameFeaturesSecondary.get('title')?.text.map((feature: string, idx: number) => (
+                    <li key={idx}>
+                      <strong>{feature}</strong> <br /> {gameFeaturesSecondary.get('subtitle')?.text[idx] || ''}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -113,7 +90,7 @@ export default function LowerHome() {
 
           {/* Mobile layout */}
           <div className="mobileOnly">
-            <div className="buttonGroup">
+            {/* <div className="buttonGroup">
               {(['about', 'features', 'controls'] as const).map((tab) => (
                 <button
                   key={tab}
@@ -174,7 +151,26 @@ export default function LowerHome() {
                   </ul>
                 </>
               )}
-            </div>
+            </div> */}
+
+            <>
+              <div className='tabContent'>
+                <h3>GAME FEATURES</h3>
+                <ul>
+                  {gameFeaturesPrimary.get('title')?.text.map((feature: string, idx: number) => (
+                    <li key={idx}>
+                      <strong>{feature}</strong> <br /> {gameFeaturesPrimary.get('subtitle')?.text[idx] || ''}
+                    </li>
+                  ))}
+                    {gameFeaturesSecondary.get('title')?.text.map((feature: string, idx: number) => (
+                    <li key={idx}>
+                      <strong>{feature}</strong> <br /> {gameFeaturesSecondary.get('subtitle')?.text[idx] || ''}
+                    </li>
+                  ))}
+                </ul>
+
+              </div>
+            </>
 
             <div className="title">
               <p>THE PAST ISN’T DEAD-IT THIRST FOR REVENGE.</p>
