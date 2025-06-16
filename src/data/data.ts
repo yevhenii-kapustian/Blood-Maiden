@@ -112,5 +112,32 @@ export const gameCreators = new Map<string, GameCreators[]>([
             role: "Game Programmer",
             link: "https://www.linkedin.com/in/simon-landin-5b7b272b2/"
         }
-    ]]
+    ]],
+     ['frontend Developer', [
+        {
+            name: "Ankita Singh",
+            role: "developer",
+            link: "https://www.linkedin.com/in/ankita-singh-1a8236185"
+        },
+        {
+            name: "Andreas Johansson",
+            role: "Artistic Director, Environment Artist",
+            link: "https://www.linkedin.com/in/andreas-johansson-a33422292/"
+        },
+        {
+            name: "Linnea Norman",
+            role: "Animation",
+            link: "https://www.linkedin.com/in/linnea-norman-128643239/"
+        },
+        {
+            name: "Arpad Pinter",
+            role: "Prop Artist",
+            link: "https://www.linkedin.com/in/arpad-pinter-789555302/"
+        },
+        {
+            name: "Marcus Swensån",
+            role: "Character Artist",
+            link: "https://www.linkedin.com/in/marcus-s-92834a2ba/"
+        }
+    ]],
 ])
