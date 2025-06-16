@@ -7,3 +7,10 @@ export type GameCreators = {
     role: string,
     link: string
 }
+
+// Data type for developers 
+export type Developer = {
+    name: string;
+    link: string;
+    image?: string;
+}
