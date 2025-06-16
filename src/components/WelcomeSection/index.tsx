@@ -29,7 +29,7 @@ export default function WelcomeSection() {
           Cursed by light. Fed by blood. Driven by vengeance
         </p>
 
-        {/* Desktop ornate button */}
+        {/* Desktop */}
         <div className="desktop-button">
           <iframe
             src="/WelcomeSection/button.html"
@@ -38,9 +38,9 @@ export default function WelcomeSection() {
           ></iframe>
         </div>
 
-        {/* Mobile button stack */}
+        {/* Mobile */}
         <div className="mobile-buttons">
-          <a href="https://yourgame.itch.io/blood-maiden" className="mobile-button">Watch the Trailer</a>
+          <a href="/media#trailer" className="mobile-button">Watch the Trailer</a>
           <a href="https://yourgame.itch.io/blood-maiden" className="mobile-button itch">
             <span>Download</span>
             <img src="/images/itch-icon.png" alt="Itch.io" className="itch-icon" />
