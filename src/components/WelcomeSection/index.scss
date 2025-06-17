@@ -2,10 +2,11 @@
 
 .hero-section {
   width: 100%;
+  overflow: hidden;
 }
 
 .hero-bg {
-  width: 100%;
+  width: 105%;
   height: 100%;
   min-height: 55rem;
   object-fit: cover;
