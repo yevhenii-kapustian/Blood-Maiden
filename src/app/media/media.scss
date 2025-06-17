@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.media {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}

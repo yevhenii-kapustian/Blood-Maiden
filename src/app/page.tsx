@@ -1,8 +1,12 @@
+import LowerHome from "@/components/LowerHomeSection";
 import WelcomeSection from '@/components/WelcomeSection';
-export default function Home() {
+
+export default function HomePage() {
   return (
-    <div>
+    <main>
       <WelcomeSection />
-    </div>
-  )
+      <LowerHome />
+    </main>
+  );
 }
+
