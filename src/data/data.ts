@@ -23,9 +23,14 @@ export const headerLinks = new Map<string, string[]>([
     ['links', ["home", "media", "about", "content creators"]]
 ]);
 
-export const gameFeatures = new Map<string, GameTextsArray>([
-    ['title', {text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression", "Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"]}],
-    ['subtitle', {text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience.", "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."]}]
+export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
+    ['title', {text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"]}],
+    ['subtitle', {text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."]}]
+])
+
+export const gameFeaturesSecondary = new Map<string, GameTextsArray>([
+     ['title', {text: ["Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"]}],
+    ['subtitle', {text: [  "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."]}]
 ])
 
 export const gameInformation = new Map<string, GameTextsArray>([

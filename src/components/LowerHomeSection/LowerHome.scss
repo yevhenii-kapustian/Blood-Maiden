@@ -163,7 +163,6 @@
 
   .mobileOnly {
     display: block;
-    margin-top: 2rem;
     text-align: center;
 
     .buttonGroup {
@@ -214,6 +213,7 @@
       background-color: rgba(39, 1, 1, 0.42);
       padding: 1rem 1.5rem;
       margin-top: 0.5rem;
+      margin-bottom: 2rem;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(75, 1, 1, 0.13);
       text-align: left !important;
