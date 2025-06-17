@@ -8,7 +8,7 @@ const assets = [
     caption: 'THE LUMINOUS WELL-SAFE POINT',
   },
   {
-    src: '/cross.png',
+    src: '/stone.png',
     caption: 'OBSIDIAN CROSS',
   },
   {
