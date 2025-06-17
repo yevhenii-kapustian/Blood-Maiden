@@ -1,5 +1,6 @@
 import MonsterCodex from "@/components/MonsterCodex";
-export function Gallery() {
+
+const Gallery = () => {
   return (
     <div>
       <MonsterCodex />
