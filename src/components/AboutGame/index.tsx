@@ -4,7 +4,7 @@ const AboutGame = () => {
          <section className="aboutmain" aria-labelledby="aboutmain-title">
       <div className="aboutmain__container">
         <div className="aboutmain__content">
-      <h1 className="aboutmain__title">Blood Maiden</h1>
+      <h2 className="aboutmain__title">Blood Maiden</h2>
             <p>They buried her in silence, hoping the grave would forget. But the
             blood remembered. <br /> 
             They say she rose from a grave that never should've been found. Pale
