@@ -12,6 +12,9 @@
     margin-bottom: 2rem;
     color: #eee;
     font-weight: normal !important;
+    @media (max-width: 900px) { 
+          text-align: center;
+      }
   }
 
   .level-section {
@@ -23,6 +26,9 @@
       font-weight: normal !important;
       margin-bottom: 1rem;
       color: #ccc;
+      @media (max-width: 900px) { 
+          text-align: center;
+      }
     }
 
     .environment-grid {

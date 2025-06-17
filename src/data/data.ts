@@ -3,7 +3,7 @@ export const mediaIntroTexts:string[] = ['Play as a resurrected maiden in a',
     'through haunted ruins to face the immortal king.',
      "You won't win. Not yet.", "But you'll die trying." ]
 
-import { GameTextsArray, GameCreators } from "@/types/type";
+import { GameTextsArray, GameCreators, Environment, Level } from "@/types/type";
 
 export const headerLinks = new Map<string, string[]>([
     ['links', ["home", "media", "about", "content creators"]]
@@ -165,7 +165,7 @@ export const pagesAndRoutes = {
     }
 }
 
-export const levelData = [
+export const levelData: Level[] = [
   {
     title: 'Level 1: Cemetery of Shadows',
     environments: [

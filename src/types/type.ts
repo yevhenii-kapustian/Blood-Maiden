@@ -14,3 +14,13 @@ export type Developer = {
     link?: string;
     image?: string;
 }
+
+export type Environment = {
+  name: string;
+  src: string;
+};
+
+export type Level = {
+  title: string;
+  environments: Environment[];
+};
