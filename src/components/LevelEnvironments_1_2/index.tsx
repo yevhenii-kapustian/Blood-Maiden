@@ -2,7 +2,7 @@
 import React from 'react';
 import './levelEnvironments_1_2.scss';
 import { levelData } from '@/data/data';
-import type { Level } from '@/data/data'; // Import the Level type
+import { Environment, Level } from "@/types/type";
 
 const LevelEnvironments: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const LevelEnvironments: React.FC = () => {
         <div key={index} className="level-section">
           <h2 className="level-title">{level.title}</h2>
           <div className="environment-grid">
-            {level.environments.map((env, idx) => (
+            {level.environments.map((env: Environment, idx: number) => (
               <div key={idx} className="environment-card">
                 <div className="image-wrapper">
                   <img src={env.src} alt={env.name} />
