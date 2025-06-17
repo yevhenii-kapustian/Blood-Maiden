@@ -1,7 +1,9 @@
+import { environmentPictures } from '@/data/data';
 import './mediaEnvironmentAssets.scss';
 
-const MediaEnvironmentAssets = () => {
-  const assets = [
+
+
+  /*const assets = [
     {
       src: '/well.png',
       caption: 'THE LUMINOUS WELL-SAFE POINT',
@@ -14,13 +16,14 @@ const MediaEnvironmentAssets = () => {
       src: '/lamp.png',
       caption: 'LAMP OF THE VEIL',
     },
-  ];
-  
+  ];*/
+
+  const MediaEnvironmentAssets = () => {
   return (
     <section className="environment-assets">
       <h2 className="section-title" id='assets'>Environmental Assets</h2>
       <div className="assets-grid">
-        {assets.map((asset, index) => (
+        {environmentPictures.map((asset, index) => (
           <div className="asset-card" key={index}>
             <img src={asset.src} alt={asset.caption} />
             <p className="caption">{asset.caption}</p>

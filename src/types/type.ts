@@ -7,3 +7,8 @@ export type GameCreators = {
     role: string,
     link: string
 }
+
+export interface IGalleryPicture {
+    src: string,
+    caption:string
+}
