@@ -5,7 +5,7 @@ const MediaLevelsSection = () => {
     return(
         <div className="media__levels">
             <div className="media__levels-title">
-                <h1>Media</h1>
+                <h2>Media</h2>
                 <img src="iconTitle.png" alt="icon title" />
             </div>
             <div className="media__levels-itemsContainer">
