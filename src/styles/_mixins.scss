@@ -61,6 +61,11 @@
     }
 }
 
+@mixin responsive-to-small {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
 @mixin flexCenter() {
     display: flex;
     justify-content: center;
