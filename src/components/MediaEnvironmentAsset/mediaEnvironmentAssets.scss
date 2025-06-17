@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+
+.environment-assets {
+  background-color: #000; 
+  box-shadow: 0 0 20px 30px rgba(0, 0, 0, 0.608);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+
+  .section-title {
+    font-size: 2.2rem;
+    font-family: $font_crimson-pro;
+    font-weight: $font-weight-normal;
+    margin-bottom: 3rem;
+  }
+
+  .assets-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .asset-card {
+    max-width: 320px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #444;
+    }
+
+    .caption {
+      margin-top: 1rem;
+      font-family: $font_crimson-text;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+  }
+   
+   @include responsive-media-l  {
+    .assets-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .asset-card {
+      width: 100%;
+      max-width: 90%;
+    }
+  }
+}

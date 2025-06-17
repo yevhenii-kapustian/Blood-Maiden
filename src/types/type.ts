@@ -8,6 +8,7 @@ export type GameCreators = {
     link: string
 }
 
+
 export type Monster = {
   name: string,
   image: string,
@@ -18,4 +19,10 @@ export type Developer = {
     name: string;
     link?: string;
     image?: string;
+}
+
+export interface IGalleryPicture {
+    src: string,
+    caption:string
+
 }

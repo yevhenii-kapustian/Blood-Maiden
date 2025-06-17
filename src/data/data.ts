@@ -1,4 +1,5 @@
-import { GameTextsArray, GameCreators, Monster } from "@/types/type";
+
+import { GameTextsArray, GameCreators, Monster, IGalleryPicture } from "@/types/type";
 
 export const pagesAndRoutes = {
     navigation: {
@@ -13,16 +14,18 @@ export const pagesAndRoutes = {
     }
 }
 
-export const mediaIntroTexts:string[] = ['Play as a resurrected maiden in a',
-    'cursed world-dashing, slashing, and bleeding',
-    'through haunted ruins to face the immortal king.',
-     "You won't win. Not yet.", "But you'll die trying." 
+export const mediaIntroTexts: string[] = [
+  "Play as a resurrected maiden in a",
+  "cursed world-dashing, slashing, and bleeding",
+  "through haunted ruins to face the immortal king.",
+  "You won't win. Not yet.",
+  "But you'll die trying.",
 ];
 
-
 export const headerLinks = new Map<string, string[]>([
-    ['links', ["home", "media", "about", "content creators"]]
+  ["links", ["home", "media", "about", "content creators"]],
 ]);
+
 
 export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
     ['title', {text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"]}],
@@ -34,16 +37,83 @@ export const gameFeaturesSecondary = new Map<string, GameTextsArray>([
     ['subtitle', {text: [  "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."]}]
 ])
 
+export const gameFeatures = new Map<string, GameTextsArray>([
+  [
+    "title",
+    {
+      text: [
+        "Blood Bending Mechanic",
+        "High-Difficulty Combat Platforming",
+        "Speedrun-Oriented Levels",
+        "Rogue-like Progression",
+        "Powerful Protagonist",
+        "Stylized Checkpoints",
+        "Modular Environment Props",
+      ],
+    },
+  ],
+  [
+    "subtitle",
+    {
+      text: [
+        "Morph blood into deadly weapon forms-blades, whips, projectiles, and more.",
+        "Designed for fast reflexes and precise movement-every mistake is lethal.",
+        "The clock is ticking. Every level is time-limited and demands quick thinking.",
+        "Die, learn, return stronger. Revenge requires resilience.",
+        "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.",
+        "Save at fountains. A breath of relief in a relentless journey.",
+        "Streetlamps, gravestones, and interactive elements shape a gothic world.",
+      ],
+    },
+  ],
+]);
+
+
 export const gameInformation = new Map<string, GameTextsArray>([
-    ['description', {text: ["Bloodbending. Revenge. Combat.", "Slay monsters, master time-based levels."]}]
-])
+  [
+    "description",
+    {
+      text: [
+        "Bloodbending. Revenge. Combat.",
+        "Slay monsters, master time-based levels.",
+      ],
+    },
+  ],
+]);
 
 export const gameSettings = new Map<string, GameTextsArray>([
-    ['keyboard', {text: ["Movement : A = left D = right (or arrow keys)", "Jump : SPACEBAR", "Dagger attack : LEFT MOUSE BUTTON", "Blood gun attack : RIGHT MOUSE BUTTON", "Dash is : SHIFT", "Grappling hook : E", "Switch between dagger and rapier : Q"]}],
-    ['controller', {text: ["Movement : Thumb stick", "Jump : (X/A)", "Dagger attack :  (□/X)", "Blood gun : LT", "Dash : (O/B)", "Switch between dagger and rapier : (△/Y)", "Grappling hook : RB"]}]
-])
+  [
+    "keyboard",
+    {
+      text: [
+        "Movement : A = left D = right (or arrow keys)",
+        "Jump : SPACEBAR",
+        "Dagger attack : LEFT MOUSE BUTTON",
+        "Blood gun attack : RIGHT MOUSE BUTTON",
+        "Dash is : SHIFT",
+        "Grappling hook : E",
+        "Switch between dagger and rapier : Q",
+      ],
+    },
+  ],
+  [
+    "controller",
+    {
+      text: [
+        "Movement : Thumb stick",
+        "Jump : (X/A)",
+        "Dagger attack :  (□/X)",
+        "Blood gun : LT",
+        "Dash : (O/B)",
+        "Switch between dagger and rapier : (△/Y)",
+        "Grappling hook : RB",
+      ],
+    },
+  ],
+]);
 
 export const gameCreators = new Map<string, GameCreators[]>([
+
     ['management', [
         {
             name: "Daniella Scruggs",
@@ -177,4 +247,21 @@ export const monsters: Monster[] = [
   { name: 'WENDIGO', image: '/images/monsters/wendigo.png' },
   { name: 'GOLEM', image: '/images/monsters/golem.png' },
   { name: 'LYCAN', image: '/images/monsters/lycan.png' },
+]
+  
+
+export const environmentPictures:IGalleryPicture[] = [
+  {
+    src: "/well.png",
+    caption: "THE LUMINOUS WELL-SAFE POINT",
+  },
+  {
+    src: "/stone.png",
+    caption: "OBSIDIAN CROSS",
+  },
+  {
+    src: "/lamp.png",
+    caption: "LAMP OF THE VEIL",
+  },
+
 ];
