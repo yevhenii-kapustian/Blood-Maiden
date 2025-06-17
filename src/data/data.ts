@@ -1,4 +1,4 @@
-import { GameTextsArray, GameCreators } from "@/types/type";
+import { GameTextsArray, GameCreators, Monster } from "@/types/type";
 
 export const pagesAndRoutes = {
     navigation: {
@@ -18,6 +18,7 @@ export const mediaIntroTexts:string[] = ['Play as a resurrected maiden in a',
     'through haunted ruins to face the immortal king.',
      "You won't win. Not yet.", "But you'll die trying." 
 ];
+
 
 export const headerLinks = new Map<string, string[]>([
     ['links', ["home", "media", "about", "content creators"]]
@@ -165,3 +166,15 @@ export const gameCreators = new Map<string, GameCreators[]>([
         }
     ]],
 ])
+
+
+export const monsters: Monster[] = [
+  { name: 'YAMI-CHAN', image: '/images/monsters/yami-chan.png' },
+  { name: 'KRYVAK', image: '/images/monsters/kryvak.png' },
+  { name: 'THE JOKER', image: '/images/monsters/the-joker.png' },
+  { name: 'THORNED BLASPHEMER', image: '/images/monsters/thorned-blasphemer.png' },
+  { name: 'THE BLACK WARDEN', image: '/images/monsters/the-black-warden.png' },
+  { name: 'WENDIGO', image: '/images/monsters/wendigo.png' },
+  { name: 'GOLEM', image: '/images/monsters/golem.png' },
+  { name: 'LYCAN', image: '/images/monsters/lycan.png' },
+];
