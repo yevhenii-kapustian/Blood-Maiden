@@ -1,0 +1,49 @@
+@import '../../styles/mixins';
+
+.aboutmain {
+    background-image: url('/bg-imag.png');
+    justify-content: space-around;
+    color: white;
+    display: flex;
+    padding: 30px;
+    &__container {
+         display: flex;
+        align-items: center;
+        align-items: center;
+        justify-content: space-around;
+        gap: 16px;
+        @include responsive-media-m {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__content {
+        font-size: 24px;
+    }
+    &__title {
+        padding-bottom: 10px; 
+         @include responsive-media-m {
+            text-align: center;
+        }
+    }
+    &__image {
+        display: inline-block;
+        background-color: #DFB97C;
+        clip-path: ellipse(40% 50%);
+        width: 300px;
+        height: 300px;
+        flex-shrink: 0;
+    }
+    &__border {
+        clip-path: ellipse(40% 49% at 50% 50%);
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }    
+}
