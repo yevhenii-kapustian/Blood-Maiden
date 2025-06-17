@@ -1,8 +1,8 @@
 import MediaIntroduction from '@/components/MediaIntroduction';
 import MediaTrailerSection from '@/components/MediaTrailerSection';
 import MediaLevelsSection from '@/components/MediaLevelsSection';
-
 import './media.scss'
+import MediaEnvironmentAssets from '@/components/MediaEnvironmentAsset';
 
 const Media = () => {
     return (
@@ -10,6 +10,7 @@ const Media = () => {
             <MediaTrailerSection />
             <MediaIntroduction />
             <MediaLevelsSection/>
+            <MediaEnvironmentAssets />
         </div>
     )
 }
