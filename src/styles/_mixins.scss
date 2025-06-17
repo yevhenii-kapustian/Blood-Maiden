@@ -1,0 +1,11 @@
+@mixin responsive-media-l {
+    @media screen and (max-width: 1150px) {
+        @content;
+    }
+}
+
+@mixin responsive-media-extraSmall {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
