@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import './LowerHome.scss';
 import { gameFeaturesPrimary, gameFeaturesSecondary, gameInformation, gameSettings } from '@/data/data';
+import LowerInfoItem from './LowerInfoItem';
+import LowerInfoItemMobile from './LowerInfoItemMobile';
 
 export default function LowerHome() {
   const [activeTab, setActiveTab] = useState<'features' | 'about' | 'controls'>('features');
@@ -48,14 +50,8 @@ export default function LowerHome() {
                   height={200}
                   className="sideImage"
                 />
-                <h3>GAME FEATURES</h3>
-                <ul>
-                  {gameFeaturesPrimary.get('title')?.text.map((feature: string, idx: number) => (
-                    <li key={idx}>
-                      <strong>{feature}</strong> <br /> {gameFeaturesPrimary.get('subtitle')?.text[idx] || ''}
-                    </li>
-                  ))}
-                </ul>
+                <LowerInfoItem text={gameFeaturesPrimary.get('title')?.text} subtitle={gameFeaturesPrimary.get('subtitle')?.text} title='GAME FEATURES' />
+
               </div>
 
               <div className="column">
@@ -76,14 +72,7 @@ export default function LowerHome() {
                   height={200}
                   className="sideImage"
                 />
-                <h3>GAME FEATURES</h3>
-                <ul>
-                  {gameFeaturesSecondary.get('title')?.text.map((feature: string, idx: number) => (
-                    <li key={idx}>
-                      <strong>{feature}</strong> <br /> {gameFeaturesSecondary.get('subtitle')?.text[idx] || ''}
-                    </li>
-                  ))}
-                </ul>
+                <LowerInfoItem text={gameFeaturesSecondary.get('title')?.text} subtitle={gameFeaturesSecondary.get('subtitle')?.text} title='GAME FEATURES' />
               </div>
             </div>
           </div>
@@ -156,19 +145,11 @@ export default function LowerHome() {
             <>
               <div className='tabContent'>
                 <h3>GAME FEATURES</h3>
-                <ul>
-                  {gameFeaturesPrimary.get('title')?.text.map((feature: string, idx: number) => (
-                    <li key={idx}>
-                      <strong>{feature}</strong> <br /> {gameFeaturesPrimary.get('subtitle')?.text[idx] || ''}
-                    </li>
-                  ))}
-                    {gameFeaturesSecondary.get('title')?.text.map((feature: string, idx: number) => (
-                    <li key={idx}>
-                      <strong>{feature}</strong> <br /> {gameFeaturesSecondary.get('subtitle')?.text[idx] || ''}
-                    </li>
-                  ))}
-                </ul>
-
+                <LowerInfoItemMobile
+                  textPrimary={gameFeaturesPrimary.get('title')?.text}
+                  subtitlePrimary={gameFeaturesPrimary.get('subtitle')?.text}
+                  textSecondary={gameFeaturesSecondary.get('title')?.text}
+                  subtitleSecondary={gameFeaturesSecondary.get('subtitle')?.text} />
               </div>
             </>
 
