@@ -1,7 +1,11 @@
-const Contentcreators = () => {
+import Creators from "@/components/Creators";
+
+const ContentCreators = () => {
     return (
-        <div>CONTENT CREATORS PAGE</div>
+        <div className="creators__background">
+        <Creators />
+        </div>
     )
 }
 
-export default Contentcreators;
+export default ContentCreators ;

@@ -4,6 +4,7 @@ import MediaLevelsSection from '@/components/MediaLevelsSection';
 import LevelEnvironments from '@/components/LevelEnvironments_1_2';
 
 import './media.scss'
+import AboutGalleryTitle from '@/components/AboutGalleryTitle';
 
 const Media = () => {
     return (
@@ -11,6 +12,7 @@ const Media = () => {
             <MediaTrailerSection />
             <MediaIntroduction />
             <MediaLevelsSection/>
+            <AboutGalleryTitle/>
             <LevelEnvironments />
         </div>
     )

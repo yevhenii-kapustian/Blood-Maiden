@@ -9,9 +9,14 @@ export const headerLinks = new Map<string, string[]>([
     ['links', ["home", "media", "about", "content creators"]]
 ]);
 
-export const gameFeatures = new Map<string, GameTextsArray>([
-    ['title', {text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression", "Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"]}],
-    ['subtitle', {text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience.", "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."]}]
+export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
+    ['title', {text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"]}],
+    ['subtitle', {text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."]}]
+])
+
+export const gameFeaturesSecondary = new Map<string, GameTextsArray>([
+     ['title', {text: ["Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"]}],
+    ['subtitle', {text: [  "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."]}]
 ])
 
 export const gameInformation = new Map<string, GameTextsArray>([
@@ -78,7 +83,18 @@ export const gameCreators = new Map<string, GameCreators[]>([
             name: "Linnea Norman",
             role: "Animation",
             link: "https://www.linkedin.com/in/linnea-norman-128643239/"
+        },
+        {
+            name: "Arpad Pinter",
+            role: "Prop Artist",
+            link: "https://www.linkedin.com/in/arpad-pinter-789555302/"
+        },
+        {
+            name: "Marcus Swensån",
+            role: "Character Artist",
+            link: "https://www.linkedin.com/in/marcus-s-92834a2ba/"
         }
+
     ]],
     ['programmers', [
         {
@@ -101,7 +117,39 @@ export const gameCreators = new Map<string, GameCreators[]>([
             role: "Game Programmer",
             link: "https://www.linkedin.com/in/simon-landin-5b7b272b2/"
         }
-    ]]
+    ]],
+     ['frontend developer', [
+        {
+            name: "Ankita Singh",
+            role: "Developer",
+            link: "https://www.linkedin.com/in/ankita-singh-1a8236185"
+        },
+        {
+            name: "Souad Taki ",
+            role: "Developer",
+            link: "https://www.linkedin.com/in/souad-rondelet-b18873184/"
+        },
+        {
+            name: "Tobias Kjernell",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
+        },
+        {
+            name: "Priyesh Illam",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
+        },
+        {
+            name: "Yevhenii Kapustian",
+            role: "Developer",
+            link: "https://www.linkedin.com/in/yevhenii-kapustian-ab85a8279/?trk=contact-info"
+        },
+         {
+            name: "Megha Albin",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
+        }
+    ]],
 ])
 
 export const pagesAndRoutes = {
