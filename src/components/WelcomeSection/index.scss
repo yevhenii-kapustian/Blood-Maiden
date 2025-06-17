@@ -72,10 +72,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  transition: all 0.2s;
 
   @include responsive-media-extraSmall {
     top: 6.3rem;
   }
+}
+
+.button-frame-description:hover {
+  opacity: 0.85;
 }
 
 .button-frame-description a {
