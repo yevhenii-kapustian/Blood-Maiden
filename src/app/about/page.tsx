@@ -8,6 +8,7 @@ const About = () => {
             <div className="about">
                 <AboutIntro />
                 <AboutGame />
+                
             </div>
         </>
     )
