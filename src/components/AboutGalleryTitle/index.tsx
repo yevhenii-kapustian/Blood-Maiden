@@ -2,8 +2,8 @@ import './aboutGalleryTitle.scss';
 
 const AboutGalleryTitle = () => {
     return(
-        <div className="aboutGalery">
-            <div className="aboutGalery__title">
+        <div className="aboutGallery">
+            <div className="aboutGallery__title">
                 <h2>Gallery</h2>
             </div>
         </div>
