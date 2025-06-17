@@ -83,7 +83,18 @@ export const gameCreators = new Map<string, GameCreators[]>([
             name: "Linnea Norman",
             role: "Animation",
             link: "https://www.linkedin.com/in/linnea-norman-128643239/"
+        },
+        {
+            name: "Arpad Pinter",
+            role: "Prop Artist",
+            link: "https://www.linkedin.com/in/arpad-pinter-789555302/"
+        },
+        {
+            name: "Marcus Swensån",
+            role: "Character Artist",
+            link: "https://www.linkedin.com/in/marcus-s-92834a2ba/"
         }
+
     ]],
     ['programmers', [
         {
@@ -106,7 +117,39 @@ export const gameCreators = new Map<string, GameCreators[]>([
             role: "Game Programmer",
             link: "https://www.linkedin.com/in/simon-landin-5b7b272b2/"
         }
-    ]]
+    ]],
+     ['frontend developer', [
+        {
+            name: "Ankita Singh",
+            role: "Developer",
+            link: "https://www.linkedin.com/in/ankita-singh-1a8236185"
+        },
+        {
+            name: "Souad Taki ",
+            role: "Developer",
+            link: "https://www.linkedin.com/in/souad-rondelet-b18873184/"
+        },
+        {
+            name: "Tobias Kjernell",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
+        },
+        {
+            name: "Priyesh Illam",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
+        },
+        {
+            name: "Yevhenii Kapustian",
+            role: "Developer",
+            link: "https://www.linkedin.com/in/yevhenii-kapustian-ab85a8279/?trk=contact-info"
+        },
+         {
+            name: "Megha Albin",
+            role: "Developer",
+            link: "https://www.linkedin.com/"
+        }
+    ]],
 ])
 
 export const pagesAndRoutes = {
