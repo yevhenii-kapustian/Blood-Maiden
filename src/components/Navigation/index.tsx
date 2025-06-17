@@ -20,7 +20,7 @@ const Navigation = (): ReactElement => {
         <>
             <nav className="nav">
                 {getPages('desktop').map((item: string, index: number) => <NavigationItem name={item} route={getRoutes('desktop')[index]} key={index} />)}
-                <a className="nav__download" href="https://futuregames.itch.io/blood-maiden">DOWNLOAD</a>
+                <a target="_blank" className="nav__download" href="https://futuregames.itch.io/blood-maiden">DOWNLOAD</a>
                 {/* <NavigationLanguage language={language} setLanguage={handleSetLanguage} /> */}
 
             </nav>

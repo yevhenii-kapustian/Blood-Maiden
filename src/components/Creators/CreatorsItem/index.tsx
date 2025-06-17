@@ -18,7 +18,7 @@ const CreatorsItem = ({ creatorsTeam, title }: ICreatorsItem) => {
                                 <li>{item.name} - {item.role}</li>
                                 <div className="centerItems">
                                     <img className="linkedInIcon" src="Vector.png" alt="linkedin icon" width="25px" height="25px" />
-                                    <a className="linkedInItem" href={item.link}>{item.name} | LinkedIn </a>
+                                    <a target="_blank" className="linkedInItem" href={item.link}>{item.name} | LinkedIn </a>
                             </div>
                             {/* <li className="list-menu"><a href={item.link}>{item.name} | LinkedIn </a></li> */}
                         </ul>
