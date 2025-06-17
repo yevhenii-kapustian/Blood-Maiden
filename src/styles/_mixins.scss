@@ -4,17 +4,12 @@
     }
 }
 
-@mixin responsive-tablet {
-    @media screen and (min-width: $breakpoint-tablet) {
-        @content;
-    }
+@mixin responsive-custom($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
 }
 
-@mixin responsive-custom($max-width) {
-    @media screen and (max-width: $max-width) {
-        @content;
-    }
-}
 
 @mixin flexCenter() {
     display: flex;
@@ -66,3 +61,17 @@
   color: white;
   text-transform: uppercase;
 }
+
+@mixin responsive-tablet {
+    @media screen and (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+
+@mixin responsive-to-small {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
