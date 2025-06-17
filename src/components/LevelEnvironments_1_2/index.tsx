@@ -1,43 +1,8 @@
 'use client';
 import React from 'react';
 import './levelEnvironments_1_2.scss';
+import { levelData } from '@/data/data';
 
-const levelData = [
-  {
-    title: 'Level 1: Cemetery of Shadows',
-    environments: [
-      {
-        name: 'Sanctuary Hollow',
-        src: '/images/LevelEnvironments/Sanctuary Hollow.png',
-      },
-      {
-        name: 'Blackveil Cemetery',
-        src: '/images/LevelEnvironments/Blackveil cementery.png',
-      },
-      {
-        name: 'The Waiting Casket',
-        src: '/images/LevelEnvironments/Coffin.png',
-      },
-    ],
-  },
-  {
-    title: 'Level 2: Nightroot Woods',
-    environments: [
-      {
-        name: 'The Mossbound Vein',
-        src: '/images/LevelEnvironments/the_mossbound_vein.png',
-      },
-      {
-        name: 'Moonfen Hollow',
-        src: '/images/LevelEnvironments/moonfen_hollow.png',
-      },
-      {
-        name: 'Lanternreach Grove',
-        src: '/images/LevelEnvironments/lanternreach_grove.png',
-      },
-    ],
-  },
-];
 
 const LevelEnvironments = () => {
   return (
