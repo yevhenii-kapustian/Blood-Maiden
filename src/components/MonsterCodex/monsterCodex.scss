@@ -20,6 +20,9 @@
   color: #e0e0e0;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .monsters-grid {
