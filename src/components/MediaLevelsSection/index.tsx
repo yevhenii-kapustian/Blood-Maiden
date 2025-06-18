@@ -26,8 +26,8 @@ const MediaLevelsSection = () => {
                     </div>
                 </div>
                 <div className="media__levels-cardsMobile">
-                    <a href=""> <span></span>Level 1. <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
-                    <a href=""><span></span>Level 2. <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
+                    <a href="#0"> <span></span>Level 1. <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
+                    <a href="#1"><span></span>Level 2. <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
                 </div>
                 <div className="media__levels-moreLinks">
                     {/* <a href="#assets"><span></span>Environmental<span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a> */}
