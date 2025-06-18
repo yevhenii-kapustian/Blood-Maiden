@@ -45,12 +45,12 @@ export const gameFeatures = new Map<string, GameTextsArray>([
 
 export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
     ['title', { text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"] }],
-    ['subtitle', { text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."] }]
+    ['subtitle', { text: ["Morph blood into deadly weapons and tools.", "Designed for fast reflexes and precise movement—every mistake could be lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."] }]
 ])
 
 export const gameFeaturesSecondary = new Map<string, GameTextsArray>([
-    ['title', { text: ["Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"] }],
-    ['subtitle', { text: ["Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."] }]
+    ['title', { text: ["Powerful Protagonist", "Stylized Checkpoints"] }],
+    ['subtitle', { text: ["Play as a fast, fierce female with blood magic—unlock abilities that make you unstoppable.", "Bath at fountain of blood and restore your health and  memory. "] }]
 ])
 
 export const gameInformation = new Map<string, GameTextsArray>([
@@ -176,7 +176,7 @@ export const gameCreators = new Map<string, GameCreators[]>([
             link: "https://www.linkedin.com/in/elliot-coffell-666105352/"
         },
         {
-            name: "Halldó Kári Kristmundsson",
+            name: "Halldór Kári Kristmundsson",
             role: "Game Programmer",
             link: "https://www.linkedin.com/in/halld%C3%B3r-k%C3%A1ri-kristmundsson/"
         },

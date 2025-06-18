@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="top">
         <div className="left">
           <ul className="features">
-            <li>3D Roguelike | Speedrunner | Combat Platformer</li>
-            <li>Bloodbending Combat</li>
-            <li>Gothic Aesthetic</li>
+            <li>3D rogue lite side-scroller | Speed based combat Platformer</li>
+            <li>Blood-bending Combat</li>
+            <li>Victorian Aesthetic</li>
             <li>High-Difficulty Gameplay</li>
             <li>Female Protagonist</li>
           </ul>
