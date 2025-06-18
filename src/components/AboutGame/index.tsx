@@ -1,40 +1,34 @@
 import './aboutGame.scss'
 const AboutGame = () => {
-    return(
-         <section className="aboutmain" aria-labelledby="aboutmain-title">
+  return (
+    <section className="aboutmain" aria-labelledby="aboutmain-title">
       <div className="aboutmain__container">
         <div className="aboutmain__content">
-      <h2 className="aboutmain__title">Blood Maiden</h2>
-            <p>They buried her in silence, hoping the grave would forget. But the
-            blood remembered. <br /> 
-            They say she rose from a grave that never should've been found. Pale
-            as ash. Eyes like dying stars. <br /> <br />
-
-            A maiden carved from sorrow and vengeance-driven by blood that is
-            not her own. <br /> She walks the shadows of a broken London, where
-            monstrous things roam the fog-
-            abominations <br /> born of alchemy and bone, magic and madness.
-             <br /> <br />
-            Soldiers and beasts each one more grotesque than the last. She does
-            not eat. She does not sleep. <br /> <br />
-            By night, she moves with terrifying grace-absorbing the blood of
-            what she slays. <br /> <br />
-             By day, the blood within her turns against her, a
-            ticking curse she must outwit. The sun is her executioner. <br /> <br />
-            She does not hunt to live. She hunts to end it. <br />
-            Not just the beasts. Not just the curse. <br />
-            She's searching for the one who created them all. 
-            The king. <br />
-            Her father.</p>
+          <h2 className="aboutmain__title">Blood Maiden</h2>
+          <p>
+            In the 18th century, a young mademoiselle was sacrificed. An unknown highborn man drained her blood as part of a ritual to restore his youth.
+            <br />She was interned in an old crypt, her body pinned in place by a silver dagger.
+            <br />A hundred years later, grave robbers remove the silver dagger from her chest, bringing her to life.
+            <br />She returns as a restless spirit with not a drop of blood in her veins. She has no memories but is filled with dark energy.
+            <br />
+            <br />To rest in peace, she must recover her own blood. Drawn by its scent, she moves through the Victorian city — toward the one who stole her life.
+            <br />Her restless soul cuts through crowds of demons, soldiers, and servants loyal to the aristocrat who still thrives,
+            <br />young and flourishing, by draining the youth of others. <br />
+            <br />As long as her body remains an empty vial, she can absorb the blood of other creatures and use it in combat or to leap through obstacles.
+            <br />However, she has weaknesses: the less blood in her body, the slower she becomes.
+            <br />
+            <br />And since she is a dark creature sustained by stolen blood, the liquid inside her coagulates quickly, killing her.
+            <br />Taking her rest when she feels safe, she retreats into the chambers of her mind, covered in flowing blood. This blood heals her amnesia, returning memories to her in the form of audiomores — sound-based memories. And the further she progresses through the levels, seeking her murderer, the more conscious she becomes — transforming, step by step, from a beast seeking blood into the avenger who approaches her killer. The king. Her father.
+          </p>
         </div>
         <div className="aboutmain__image">
-            <div className='aboutmain__border'>
+          <div className='aboutmain__border'>
             <img src="/sleepy-maiden.png" alt="" />
-            </div>
+          </div>
         </div>
       </div>
-    </section>
-    )
+    </section >
+  )
 }
 
 export default AboutGame;

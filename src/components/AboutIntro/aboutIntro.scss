@@ -4,7 +4,8 @@
 .about {
 
     &__intro {
-        background-image: url('../../../public/graveyard.webp');
+        background-image: url('../../../public/images/screenshots/environmentlevels/1/Lampost_environ_level1.png');
+        filter:grayscale(1);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -25,13 +26,12 @@
     &__text {
 
         font-size: clamp(12px, 8vw, 48px);
-        color: #fff;
+        color: #000;
         max-width: 575px;
         padding: 0 1rem;
         text-align: center;
         font-family: $font_crimson-text;
         font-weight: 600;
-        text-transform: capitalize;
 
         @media screen and (max-width: 450px) {
             font-size: 16px;
