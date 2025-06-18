@@ -21,12 +21,15 @@ import './mediaEnvironmentAssets.scss';
   const MediaEnvironmentAssets = () => {
   return (
     <section className="environment-assets">
-      <h2 className="section-title" id='assets'>Environmental Assets</h2>
+      {/* <h2 className="section-title" id='assets'>Environmental</h2> */}
       <div className="assets-grid">
         {environmentPictures.map((asset, index) => (
           <div className="asset-card" key={index}>
-            <img src={asset.src} alt={asset.caption} />
-            <p className="caption">{asset.caption}</p>
+                {asset.name === "luminous" ? <h2 className='section-title'>Environmental</h2> : undefined}
+              <div>
+                <img src={asset.src} alt={asset.caption} />
+                <p className="caption">{asset.caption}</p>
+              </div>
           </div>
         ))}
       </div>

@@ -9,6 +9,7 @@ export type GameCreators = {
 }
 
 export interface IGalleryPicture {
+    name: string,
     src: string,
     caption:string
 }
