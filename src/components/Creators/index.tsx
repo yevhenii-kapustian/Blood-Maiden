@@ -3,7 +3,7 @@ import React from 'react';
 import './creators.scss';
 import { gameCreators } from '@/data/data';
 import CreatorsItem from './CreatorsItem';
-import { title } from 'process';
+
 
 const Creators = () => {
   return (
@@ -17,6 +17,7 @@ const Creators = () => {
         <CreatorsItem creatorsTeam={gameCreators.get("programmers")} title='Programmers' />
         <CreatorsItem creatorsTeam={gameCreators.get("frontend developer")} title='Frontend-Developer' />
         <CreatorsItem creatorsTeam={gameCreators.get("management")} title='Management' />
+        <CreatorsItem creatorsTeam={gameCreators.get("ux-designer")} title='UX-Designer' /> 
 
       </div>
 

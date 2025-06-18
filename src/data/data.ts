@@ -29,13 +29,13 @@ export const headerLinks = new Map<string, string[]>([
 
 
 export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
-    ['title', {text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"]}],
-    ['subtitle', {text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."]}]
+    ['title', { text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"] }],
+    ['subtitle', { text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."] }]
 ])
 
 export const gameFeaturesSecondary = new Map<string, GameTextsArray>([
-     ['title', {text: ["Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"]}],
-    ['subtitle', {text: [  "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."]}]
+    ['title', { text: ["Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"] }],
+    ['subtitle', { text: ["Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."] }]
 ])
 
 export const gameFeatures = new Map<string, GameTextsArray>([
@@ -204,7 +204,7 @@ export const gameCreators = new Map<string, GameCreators[]>([
             link: "https://www.linkedin.com/in/simon-landin-5b7b272b2/"
         }
     ]],
-     ['frontend developer', [
+    ['frontend developer', [
         {
             name: "Ankita Singh",
             role: "Developer",
@@ -230,12 +230,19 @@ export const gameCreators = new Map<string, GameCreators[]>([
             role: "Developer",
             link: "https://www.linkedin.com/in/yevhenii-kapustian-ab85a8279/?trk=contact-info"
         },
-         {
+        {
             name: "Megha Albin",
             role: "Developer",
             link: "https://www.linkedin.com/"
         }
     ]],
+    ['ux-designer', [{
+
+        name: 'Paloma Muñoz Inostroza',
+        role: 'UX-Designer',
+        link: 'https://www.linkedin.com/in/paloma-munoz-inostroza-994182363/'
+    }
+    ]]
 ])
 
 export const monsters: Monster[] = [
