@@ -8,6 +8,11 @@ export type GameCreators = {
     link: string
 }
 
+export type Monster = {
+  name: string,
+  image: string,
+}
+
 // Data type for developers 
 export type Developer = {
     name: string;
