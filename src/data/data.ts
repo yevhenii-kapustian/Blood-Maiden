@@ -238,6 +238,10 @@ export const levelData: Level[] = [
       {
         name: 'Overview',
         src: '/images/screenshots/environmentlevels/2/environment_level2.png'
+      },
+        {
+        name: 'Overview Balloons',
+        src: '/images/screenshots/environmentlevels/2/level2balloon.png'
       }
     ],
   },
@@ -263,8 +267,10 @@ export const environmentPictures: IGalleryPicture[] = [
 
 export const monsters: Monster[] = [
   { name: 'Vines', image: '/images/screenshots/enemiesandobstacles/obstacles_level_1_v2.png' },
+  { name: 'THORNED BLASPHEMER', image: '/images/screenshots/enemiesandobstacles/turning_obstacles_level1.png'},
   { name: 'Vines', image: '/images/screenshots/enemiesandobstacles/obstacles_level_1.png' },
   { name: 'Hot air balloon', image: '/images/screenshots/enemiesandobstacles/obstacles_level_2.png'},
-  { name: 'THORNED BLASPHEMER', image: '/images/screenshots/enemiesandobstacles/turning_obstacles_level1.png'},
+  { name: 'Enemy', image: '/images/screenshots/enemiesandobstacles/enemy1.png'},
+  { name: 'Enemy', image: '/images/screenshots/enemiesandobstacles/enemy2.png'},
 ];
 
