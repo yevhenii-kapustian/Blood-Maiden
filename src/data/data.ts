@@ -252,14 +252,17 @@ export const monsters: Monster[] = [
 
 export const environmentPictures:IGalleryPicture[] = [
   {
+    name: "luminous",
     src: "/well.png",
     caption: "THE LUMINOUS WELL-SAFE POINT",
   },
   {
+    name: "obsidian",
     src: "/stone.png",
     caption: "OBSIDIAN CROSS",
   },
   {
+    name: "lamp",
     src: "/lamp.png",
     caption: "LAMP OF THE VEIL",
   },

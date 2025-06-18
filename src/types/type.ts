@@ -22,6 +22,7 @@ export type Developer = {
 }
 
 export interface IGalleryPicture {
+    name: string,
     src: string,
     caption:string
 
