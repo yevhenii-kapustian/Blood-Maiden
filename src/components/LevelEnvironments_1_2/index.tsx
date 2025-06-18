@@ -9,7 +9,7 @@ const LevelEnvironments: React.FC = () => {
     <div className="level-environments">
       <h1 className="main-title">Level Environments</h1>
       {levelData.map((level: Level, index: number) => (
-        <div key={index} className="level-section">
+        <div id={`${index}`} key={index} className="level-section">
           <h2 className="level-title">{level.title}</h2>
           <div className="environment-grid">
             {level.environments.map((env: Environment, idx: number) => (

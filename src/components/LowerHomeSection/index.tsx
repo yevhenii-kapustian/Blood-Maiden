@@ -19,9 +19,12 @@ export default function LowerHome() {
           {/* Desktop Layout */}
           <div className="desktopOnly">
             <div className="title">
-              <p>THE PAST ISN’T DEAD-IT THIRST FOR REVENGE.</p>
-              <p>SLAY MONSTERS. KILL THE KING’S MEN.</p>
-              <p>UNCOVER FORBIDDEN POWER. BECOME A LEGEND.</p>
+        <h3>Enter a Bloodstained Dance of Death and Magic</h3>
+              <p>In this rogue-lite adventure, death — and spilling your own blood — is the only way to learn. Driven by the exquisite crimson liquid, cut and slash your way through a relentless throng of foes.
+
+                Uncover the filthy secrets of a twisted version of Victorian London — a city ruled by an undead king, driven mad by Masonic knowledge of eternal life. There, your reflexes will be tested thousands of times, and you’ll lose most of those battles.
+
+                But when death comes, don’t despair — it’s the key to your power. And to yourself.  </p>
             </div>
 
             <div className="download">
@@ -154,9 +157,12 @@ export default function LowerHome() {
             </>
 
             <div className="title">
-              <p>THE PAST ISN’T DEAD-IT THIRST FOR REVENGE.</p>
-              <p>SLAY MONSTERS. KILL THE KING’S MEN.</p>
-              <p>UNCOVER FORBIDDEN POWER. BECOME A LEGEND.</p>
+              <h3>Enter a Bloodstained Dance of Death and Magic</h3>
+              <p>In this rogue-lite adventure, death — and spilling your own blood — is the only way to learn. Driven by the exquisite crimson liquid, cut and slash your way through a relentless throng of foes.
+
+                Uncover the filthy secrets of a twisted version of Victorian London — a city ruled by an undead king, driven mad by Masonic knowledge of eternal life. There, your reflexes will be tested thousands of times, and you’ll lose most of those battles.
+
+                But when death comes, don’t despair — it’s the key to your power. And to yourself.  </p>
             </div>
 
             <div className="threeColumnGrid">

@@ -14,14 +14,14 @@ const MediaLevelsSection = () => {
                         <img src="levels1.png" alt="first level"/>
                         <div className='media__levels-itemsContainer__cards-itemsLevel__level'>
                             <h4>Level 1.</h4>
-                            <a href="">Learn More</a>
+                            <a href="#0">Learn More</a>
                         </div>
                     </div>
                     <div className='media__levels-itemsContainer__cards-itemsLevel'>
                         <img src="levels2.png" alt="second level"/>
                         <div className='media__levels-itemsContainer__cards-itemsLevel__level'>
                             <h4>Level 2.</h4>
-                            <a href="">Learn More</a>
+                            <a href="#1">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -30,8 +30,8 @@ const MediaLevelsSection = () => {
                     <a href=""><span></span>Level 2. <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
                 </div>
                 <div className="media__levels-moreLinks">
-                    <a href="#assets"><span></span>Environmental Assets <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
-                    <a href=""><span></span>Monsters Codex <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
+                    {/* <a href="#assets"><span></span>Environmental<span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a> */}
+                    <a href="#enemies"><span></span>ENEMIES AND OBSTACLES<span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
                 </div>
             </div>
         </div>

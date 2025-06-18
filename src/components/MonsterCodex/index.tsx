@@ -14,7 +14,7 @@ export default function MonstersCodex() {
         />
       </Head>
       <main className="monsters-container">
-        <h1 className="monsters-title">MONSTERS CODEX</h1>
+        <h1 className="monsters-title">ENEMIES AND OBSTACLES</h1>
         <div className="monsters-grid">
           {monsters.map((monster) => (
             <div key={monster.name} className="monster-wrapper">
