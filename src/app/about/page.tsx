@@ -5,13 +5,10 @@ import AboutGame from "@/components/AboutGame";
 
 const About = () => {
     return (
-        <>
             <div className="about">
                 <AboutIntro />
                 <AboutGame />
-             
-            </div>
-        </>
+        </div>
     )
 }
 

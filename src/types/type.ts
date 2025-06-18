@@ -8,6 +8,17 @@ export type GameCreators = {
     link: string
 }
 
+export interface IGalleryPicture {
+    name: string,
+    src: string,
+    caption:string
+}
+
+export type Monster = {
+  name: string,
+  image: string,
+}
+
 // Data type for developers 
 export type Developer = {
     name: string;
