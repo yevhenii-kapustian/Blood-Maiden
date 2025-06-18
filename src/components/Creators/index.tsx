@@ -8,7 +8,7 @@ import { title } from 'process';
 const Creators = () => {
   return (
     <div className="creators-container">
-      <h2 className="section-title">CONTENT CREATORS</h2>
+      <h1 className="section-title">CONTENT CREATORS</h1>
 
       <div className="creators-grid">
 
