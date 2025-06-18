@@ -16,7 +16,7 @@ const CreatorsItem = ({ creatorsTeam, title }: ICreatorsItem) => {
                             <div key={index}>
                                 <ul>
                                     <li>
-                                        <a href={item.link} className="centerItems linkedInItem">
+                                        <a target="_blank" href={item.link} className="centerItems linkedInItem">
                                             <div  className="linkedInContainer">{item.name} <img className="linkedInIcon" src="Vector.png" alt="linkedin icon" width="25px" height="25px" /></div>
                                             <div className="role">{item.role}</div>
                                         </a>
