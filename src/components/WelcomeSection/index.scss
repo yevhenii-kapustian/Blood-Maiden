@@ -1,0 +1,113 @@
+@import '../../styles/mixins';
+
+.hero-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-bg {
+  width: 105%;
+  height: 100%;
+  min-height: 55rem;
+  object-fit: cover;
+
+  @include responsive-media-l {
+    object-position: 46% 50%;
+  }
+}
+
+.hero-content-items {
+  position: absolute;
+  top: 3rem;
+  left: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include responsive-media-l {
+    top: 17rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+
+.hero-logo {
+  width: clamp(24rem, 35vw, 40rem);
+  height: auto;
+
+  @include responsive-media-extraSmall {
+    width: 20rem;
+  }
+}
+
+.hero-tagline {
+  text-align: center;
+  margin-top: -6.5rem;
+  color: white;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  line-height: 1.6;
+
+  @include responsive-media-l {
+    margin-top: -5rem;
+
+  }
+}
+
+.button-frame {
+  position: relative;
+}
+
+.button-frame img {
+  width: clamp(24rem, 33vw, 38rem);
+  height: auto;
+
+  @include responsive-media-extraSmall {
+    width: 20rem;
+  }
+}
+
+.button-frame-description {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: all 0.2s;
+
+  @include responsive-media-extraSmall {
+    top: 6.3rem;
+  }
+}
+
+.button-frame-description:hover {
+  opacity: 0.85;
+}
+
+.button-frame-description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(13.5rem, 19vw, 21.6rem);
+  height: clamp(4.6rem, 6.5vw, 7.3rem);
+  border-radius: 12px;
+  background: linear-gradient(90deg,rgba(172, 8, 21, 1) 0%, rgba(99, 0, 8, 1) 100%);
+  color: white;
+  font-size: clamp(17px, 1.5vw, 28px);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0px 0px 20px #ffffffd9;
+  box-shadow: 0 0 2px 1px #000000bf;
+
+  @include responsive-media-extraSmall {
+    width: 11.3rem;
+    height: 3.8rem;
+    font-size: 15px;
+  }
+
+}
