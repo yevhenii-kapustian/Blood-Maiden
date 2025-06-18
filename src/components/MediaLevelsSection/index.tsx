@@ -30,7 +30,7 @@ const MediaLevelsSection = () => {
                     <a href=""><span></span>Level 2. <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
                 </div>
                 <div className="media__levels-moreLinks">
-                    <a href=""><span></span>Environmental Assets <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
+                    <a href="#assets"><span></span>Environmental Assets <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
                     <a href=""><span></span>Monsters Codex <span><Icon icon="material-symbols:arrow-forward-ios-rounded" width="24" height="24" /></span></a>
                 </div>
             </div>

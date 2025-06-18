@@ -1,12 +1,46 @@
-export const mediaIntroTexts:string[] = ['Play as a resurrected maiden in a',
-    'cursed world-dashing, slashing, and bleeding',
-    'through haunted ruins to face the immortal king.',
-     "You won't win. Not yet.", "But you'll die trying." ]
+import { GameTextsArray, GameCreators, IGalleryPicture, Monster, Environment, Level } from "@/types/type";
 
-import { GameTextsArray, GameCreators } from "@/types/type";
+export const mediaIntroTexts: string[] = [
+  "Play as a resurrected maiden in a",
+  "cursed world-dashing, slashing, and bleeding",
+  "through haunted ruins to face the immortal king.",
+  "You won't win. Not yet.",
+  "But you'll die trying.",
+];
 
 export const headerLinks = new Map<string, string[]>([
-    ['links', ["home", "media", "about", "content creators"]]
+  ["links", ["home", "media", "about", "content creators"]],
+]);
+
+export const gameFeatures = new Map<string, GameTextsArray>([
+  [
+    "title",
+    {
+      text: [
+        "Blood Bending Mechanic",
+        "High-Difficulty Combat Platforming",
+        "Speedrun-Oriented Levels",
+        "Rogue-like Progression",
+        "Powerful Protagonist",
+        "Stylized Checkpoints",
+        "Modular Environment Props",
+      ],
+    },
+  ],
+  [
+    "subtitle",
+    {
+      text: [
+        "Morph blood into deadly weapon forms-blades, whips, projectiles, and more.",
+        "Designed for fast reflexes and precise movement-every mistake is lethal.",
+        "The clock is ticking. Every level is time-limited and demands quick thinking.",
+        "Die, learn, return stronger. Revenge requires resilience.",
+        "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.",
+        "Save at fountains. A breath of relief in a relentless journey.",
+        "Streetlamps, gravestones, and interactive elements shape a gothic world.",
+      ],
+    },
+  ],
 ]);
 
 export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
@@ -20,13 +54,47 @@ export const gameFeaturesSecondary = new Map<string, GameTextsArray>([
 ])
 
 export const gameInformation = new Map<string, GameTextsArray>([
-    ['description', {text: ["Bloodbending. Revenge. Combat.", "Slay monsters, master time-based levels."]}]
-])
+  [
+    "description",
+    {
+      text: [
+        "Bloodbending. Revenge. Combat.",
+        "Slay monsters, master time-based levels.",
+      ],
+    },
+  ],
+]);
 
 export const gameSettings = new Map<string, GameTextsArray>([
-    ['keyboard', {text: ["Movement : A = left D = right (or arrow keys)", "Jump : SPACEBAR", "Dagger attack : LEFT MOUSE BUTTON", "Blood gun attack : RIGHT MOUSE BUTTON", "Dash is : SHIFT", "Grappling hook : E", "Switch between dagger and rapier : Q"]}],
-    ['controller', {text: ["Movement : Thumb stick", "Jump : (X/A)", "Dagger attack :  (□/X)", "Blood gun : LT", "Dash : (O/B)", "Switch between dagger and rapier : (△/Y)", "Grappling hook : RB"]}]
-])
+  [
+    "keyboard",
+    {
+      text: [
+        "Movement : A = left D = right (or arrow keys)",
+        "Jump : SPACEBAR",
+        "Dagger attack : LEFT MOUSE BUTTON",
+        "Blood gun attack : RIGHT MOUSE BUTTON",
+        "Dash is : SHIFT",
+        "Grappling hook : E",
+        "Switch between dagger and rapier : Q",
+      ],
+    },
+  ],
+  [
+    "controller",
+    {
+      text: [
+        "Movement : Thumb stick",
+        "Jump : (X/A)",
+        "Dagger attack :  (□/X)",
+        "Blood gun : LT",
+        "Dash : (O/B)",
+        "Switch between dagger and rapier : (△/Y)",
+        "Grappling hook : RB",
+      ],
+    },
+  ],
+]);
 
 export const gameCreators = new Map<string, GameCreators[]>([
     ['management', [
@@ -153,15 +221,81 @@ export const gameCreators = new Map<string, GameCreators[]>([
 ])
 
 export const pagesAndRoutes = {
-    navigation: {
-        desktop: {
-            pages: ['home', 'media', 'about', 'content creators'],
-            routes: ['home', 'media', 'about', 'content creators']
-        },
-        mobile: {
-            pages: ['home', 'media', 'about', 'creators'],
-            routes: ['home', 'media', 'about', 'content creators']
-        }
-    }
-}
+  navigation: {
+    desktop: {
+      pages: ["home", "media", "about", "content creators"],
+      routes: ["home", "media", "about", "content creators"],
+    },
+    mobile: {
+      pages: ["home", "media", "about", "creators"],
+      routes: ["home", "media", "about", "content creators"],
+    },
+  },
+};
+
+export const levelData: Level[] = [
+  {
+    title: 'Level 1: Cemetery of Shadows',
+    environments: [
+      {
+        name: 'Sanctuary Hollow',
+        src: '/images/LevelEnvironments/Sanctuary Hollow.png',
+      },
+      {
+        name: 'Blackveil Cemetery',
+        src: '/images/LevelEnvironments/Blackveil cementery.png',
+      },
+      {
+        name: 'The Waiting Casket',
+        src: '/images/LevelEnvironments/Coffin.png',
+      },
+    ],
+  },
+  {
+    title: 'Level 2: Nightroot Woods',
+    environments: [
+      {
+        name: 'The Mossbound Vein',
+        src: '/images/LevelEnvironments/the_mossbound_vein.png',
+      },
+      {
+        name: 'Moonfen Hollow',
+        src: '/images/LevelEnvironments/moonfen_hollow.png',
+      },
+      {
+        name: 'Lanternreach Grove',
+        src: '/images/LevelEnvironments/lanternreach_grove.png',
+      },
+    ],
+  },
+];
+
+export const environmentPictures:IGalleryPicture[] = [
+  {
+    name: "luminous",
+    src: "/well.png",
+    caption: "THE LUMINOUS WELL-SAFE POINT",
+  },
+  {
+    name: "obsidian",
+    src: "/stone.png",
+    caption: "OBSIDIAN CROSS",
+  },
+  {
+    name: "lamp",
+    src: "/lamp.png",
+    caption: "LAMP OF THE VEIL",
+  },
+];
+
+export const monsters: Monster[] = [
+  { name: 'YAMI-CHAN', image: '/images/monsters/yami-chan.png' },
+  { name: 'KRYVAK', image: '/images/monsters/kryvak.png' },
+  { name: 'THE JOKER', image: '/images/monsters/the-joker.png' },
+  { name: 'THORNED BLASPHEMER', image: '/images/monsters/thorned-blasphemer.png' },
+  { name: 'THE BLACK WARDEN', image: '/images/monsters/the-black-warden.png' },
+  { name: 'WENDIGO', image: '/images/monsters/wendigo.png' },
+  { name: 'GOLEM', image: '/images/monsters/golem.png' },
+  { name: 'LYCAN', image: '/images/monsters/lycan.png' },
+];
 
