@@ -12,21 +12,21 @@ const CreatorsItem = ({ creatorsTeam, title }: ICreatorsItem) => {
                 <ul className="grid-item">
                     <h3>{title}</h3>
                     <div className="grid-border">
-                    {creatorsTeam?.map((item, index) => (
-                        <div key={index}>
-                            <ul>
-                                <li>{item.name} - {item.role}</li>
-                                <div className="centerItems">
-                                    <img className="linkedInIcon" src="Vector.png" alt="linkedin icon" width="25px" height="25px" />
-                                    <a className="linkedInItem" href={item.link}>{item.name} | LinkedIn </a>
+                        {creatorsTeam?.map((item, index) => (
+                            <div key={index}>
+                                <ul>
+                                    <li>
+                                        <a href={item.link} className="centerItems linkedInItem">
+                                            <div  className="linkedInContainer">{item.name} <img className="linkedInIcon" src="Vector.png" alt="linkedin icon" width="25px" height="25px" /></div>
+                                            <div className="role">{item.role}</div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            {/* <li className="list-menu"><a href={item.link}>{item.name} | LinkedIn </a></li> */}
-                        </ul>
-                        </div>
-                    ))}
+                        ))}
                     </div>
-            </ul>
-        </div>
+                </ul>
+            </div>
         </div >
     )
 }

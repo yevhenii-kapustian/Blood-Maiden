@@ -1,7 +1,7 @@
-export const mediaIntroTexts:string[] = ['Play as a resurrected maiden in a',
+export const mediaIntroTexts: string[] = ['Play as a resurrected maiden in a',
     'cursed world-dashing, slashing, and bleeding',
     'through haunted ruins to face the immortal king.',
-     "You won't win. Not yet.", "But you'll die trying." ]
+    "You won't win. Not yet.", "But you'll die trying."]
 
 import { GameTextsArray, GameCreators } from "@/types/type";
 
@@ -10,22 +10,22 @@ export const headerLinks = new Map<string, string[]>([
 ]);
 
 export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
-    ['title', {text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"]}],
-    ['subtitle', {text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."]}]
+    ['title', { text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"] }],
+    ['subtitle', { text: ["Morph blood into deadly weapon forms-blades, whips, projectiles, and more.", "Designed for fast reflexes and precise movement-every mistake is lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."] }]
 ])
 
 export const gameFeaturesSecondary = new Map<string, GameTextsArray>([
-     ['title', {text: ["Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"]}],
-    ['subtitle', {text: [  "Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."]}]
+    ['title', { text: ["Powerful Protagonist", "Stylized Checkpoints", "Modular Environment Props"] }],
+    ['subtitle', { text: ["Play as a fast, fierce female with blood magic-unlock abilities that make you unstoppable.", "Save at fountains. A breath of relief in a relentless journey.", "Streetlamps, gravestones, and interactive elements shape a gothic world."] }]
 ])
 
 export const gameInformation = new Map<string, GameTextsArray>([
-    ['description', {text: ["Bloodbending. Revenge. Combat.", "Slay monsters, master time-based levels."]}]
+    ['description', { text: ["Bloodbending. Revenge. Combat.", "Slay monsters, master time-based levels."] }]
 ])
 
 export const gameSettings = new Map<string, GameTextsArray>([
-    ['keyboard', {text: ["Movement : A = left D = right (or arrow keys)", "Jump : SPACEBAR", "Dagger attack : LEFT MOUSE BUTTON", "Blood gun attack : RIGHT MOUSE BUTTON", "Dash is : SHIFT", "Grappling hook : E", "Switch between dagger and rapier : Q"]}],
-    ['controller', {text: ["Movement : Thumb stick", "Jump : (X/A)", "Dagger attack :  (□/X)", "Blood gun : LT", "Dash : (O/B)", "Switch between dagger and rapier : (△/Y)", "Grappling hook : RB"]}]
+    ['keyboard', { text: ["Movement : A = left D = right (or arrow keys)", "Jump : SPACEBAR", "Dagger attack : LEFT MOUSE BUTTON", "Blood gun attack : RIGHT MOUSE BUTTON", "Dash is : SHIFT", "Grappling hook : E", "Switch between dagger and rapier : Q"] }],
+    ['controller', { text: ["Movement : Thumb stick", "Jump : (X/A)", "Dagger attack :  (□/X)", "Blood gun : LT", "Dash : (O/B)", "Switch between dagger and rapier : (△/Y)", "Grappling hook : RB"] }]
 ])
 
 export const gameCreators = new Map<string, GameCreators[]>([
@@ -118,7 +118,7 @@ export const gameCreators = new Map<string, GameCreators[]>([
             link: "https://www.linkedin.com/in/simon-landin-5b7b272b2/"
         }
     ]],
-     ['frontend developer', [
+    ['frontend developer', [
         {
             name: "Ankita Singh",
             role: "Developer",
@@ -144,12 +144,19 @@ export const gameCreators = new Map<string, GameCreators[]>([
             role: "Developer",
             link: "https://www.linkedin.com/in/yevhenii-kapustian-ab85a8279/?trk=contact-info"
         },
-         {
+        {
             name: "Megha Albin",
             role: "Developer",
             link: "https://www.linkedin.com/"
         }
     ]],
+    ['ux-designer', [{
+
+        name: 'Paloma Muñoz Inostroza',
+        role: 'UX-Designer',
+        link: 'https://www.linkedin.com/in/paloma-munoz-inostroza-994182363/'
+    }
+    ]]
 ])
 
 export const pagesAndRoutes = {
