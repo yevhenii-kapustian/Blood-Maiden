@@ -1,5 +1,5 @@
 
-import { GameTextsArray, GameCreators, Monster, IGalleryPicture } from "@/types/type";
+import { GameTextsArray, GameCreators, Monster, IGalleryPicture, Environment, Level } from "@/types/type";
 
 export const pagesAndRoutes = {
     navigation: {
@@ -21,6 +21,7 @@ export const mediaIntroTexts: string[] = [
   "You won't win. Not yet.",
   "But you'll die trying.",
 ];
+
 
 export const headerLinks = new Map<string, string[]>([
   ["links", ["home", "media", "about", "content creators"]],
@@ -237,7 +238,6 @@ export const gameCreators = new Map<string, GameCreators[]>([
     ]],
 ])
 
-
 export const monsters: Monster[] = [
   { name: 'YAMI-CHAN', image: '/images/monsters/yami-chan.png' },
   { name: 'KRYVAK', image: '/images/monsters/kryvak.png' },
@@ -265,3 +265,41 @@ export const environmentPictures:IGalleryPicture[] = [
   },
 
 ];
+
+export const levelData: Level[] = [
+  {
+    title: 'Level 1: Cemetery of Shadows',
+    environments: [
+      {
+        name: 'Sanctuary Hollow',
+        src: '/images/LevelEnvironments/Sanctuary Hollow.png',
+      },
+      {
+        name: 'Blackveil Cemetery',
+        src: '/images/LevelEnvironments/Blackveil cementery.png',
+      },
+      {
+        name: 'The Waiting Casket',
+        src: '/images/LevelEnvironments/Coffin.png',
+      },
+    ],
+  },
+  {
+    title: 'Level 2: Nightroot Woods',
+    environments: [
+      {
+        name: 'The Mossbound Vein',
+        src: '/images/LevelEnvironments/the_mossbound_vein.png',
+      },
+      {
+        name: 'Moonfen Hollow',
+        src: '/images/LevelEnvironments/moonfen_hollow.png',
+      },
+      {
+        name: 'Lanternreach Grove',
+        src: '/images/LevelEnvironments/lanternreach_grove.png',
+      },
+    ],
+  },
+];
+

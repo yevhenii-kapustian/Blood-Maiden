@@ -26,3 +26,14 @@ export interface IGalleryPicture {
     caption:string
 
 }
+
+export type Environment = {
+  name: string;
+  src: string;
+};
+
+export type Level = {
+  title: string;
+  environments: Environment[];
+};
+
