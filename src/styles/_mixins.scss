@@ -16,6 +16,12 @@
     }
 }
 
+@mixin responsive-media-extraSmall {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
 @mixin center-flex {
   display: flex;
   justify-content: center;
@@ -61,6 +67,11 @@
     }
 }
 
+@mixin responsive-to-small {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
 @mixin flexCenter() {
     display: flex;
     justify-content: center;
