@@ -214,12 +214,8 @@ export const levelData: Level[] = [
     title: 'Level 1: Cemetery and Forest',
     environments: [
       {
-        name: 'Lamp post',
-        src: '/images/screenshots/environmentlevels/1/Lampost_environ_level1.png',
-      },
-      {
         name: 'Pillars',
-        src: '/images/screenshots/environmentlevels/1/pillar_environ_level1.png',
+        src: '/images/screenshots/environmentlevels/1/lamppost_update.png',
       },
       {
         name: 'Stone Coffins',
@@ -229,7 +225,11 @@ export const levelData: Level[] = [
         name: 'Wood Coffins',
         src: '/images/screenshots/environmentlevels/1/Wooden_coffin_environ_level1.png',
       },
-
+      {
+        name: 'Lamp post',
+        src: '/images/screenshots/environmentlevels/1/Lampost_environ_level1.png',
+      },
+      
     ],
   },
   {

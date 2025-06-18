@@ -1,11 +1,11 @@
-.level-environments {
+.level-monster {
   background-color: #0a0a0a;
   padding: 4rem;
   color: #fff;
   font-family: 'Georgia', serif;
   
 
-  .main-title {
+  .monster-title {
     text-transform: uppercase;
     font-size: 1.5rem;
     text-align: left;
@@ -17,10 +17,10 @@
       }
   }
 
-  .level-section {
+  .monster-section {
     margin-bottom: 3rem;
 
-    .level-title {
+    .monster-title {
       font-size: 1.2rem;
       text-transform: uppercase;
       font-weight: normal !important;
@@ -31,16 +31,16 @@
       }
     }
 
-    .environment-grid {
+    .monster-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(220px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
       align-items: stretch;
       @media (max-width: 900px) { 
           grid-template-columns: 1fr;
       }
     }
-    .environment-card {
+    .monster-card {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -50,7 +50,7 @@
 
       img {
         width: 100%;
-        max-width: 400px;
+        height: 500px;
         height: auto;
         margin-top: auto; // This ensures the image aligns to the bottom
         border: 2px solid #a5a4a4;
@@ -58,7 +58,7 @@
         object-fit: contain;
       }
 
-      .env-label {
+      .monster-label {
         margin-top: 0.5rem;
         font-size: 0.9rem;
         text-transform: uppercase;

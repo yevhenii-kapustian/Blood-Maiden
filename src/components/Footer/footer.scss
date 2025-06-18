@@ -2,7 +2,7 @@
   background-color: #0a0a0a;
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem;
   flex-wrap: wrap;
   flex-direction: column;
@@ -139,9 +139,8 @@
 
 .bottom {
   display: flex;
-  align-items: center;
   margin-top: 0.5rem;
-  justify-content: flex-start;
+  position: relative;
 
   a {
     color: #fff;
@@ -152,28 +151,36 @@
       color: #aaa;
     }
   }
+  
+  .linkedIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-start;
+  }
 
-  @media (max-width: 511px) {
-    justify-content: flex-start;
+  @media (max-width: 511px) { 
+ 
     font-size: 0.5rem;
   }
 
   @media (min-width: 512px) and (max-width: 1022px) {
-    justify-content: flex-start;
+   
     font-size: 0.75rem;
   }
 
   @media (min-width: 1023px) and (max-width: 1068px) {
-    justify-content: flex-start;
+
     font-size: 1.5rem;
   }
 
   .center {
+    width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 0.5rem;
     color: #ccc;
-    padding-left: 20rem;
     font-size: 1rem;
 
     @media (max-width: 511px) {
@@ -183,12 +190,12 @@
 
     @media (min-width: 512px) and (max-width: 1022px) {
       font-size: 0.75rem;
-      padding-left: 0rem;
+     
     }
 
     @media (min-width: 1023px) and (max-width: 1068px) {
       font-size: 1rem;
-      padding-left: 5rem;
+      
     }
   }
 }

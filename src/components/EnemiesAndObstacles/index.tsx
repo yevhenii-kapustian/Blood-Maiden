@@ -6,16 +6,16 @@ import { monsters } from '@/data/data';
 
 const EnemiesAndObstacles: React.FC = () => {
   return (
-    <div id='enemies' className="level-environments">
-      <h1 className="main-title">Monster and obstacles</h1>
+    <div id='enemies' className="level-monster">
+      <h1 className="monster-title">Monster and obstacles</h1>
 
-      <div className="level-section">
-        <div className="environment-grid">
+      <div className="monster-section">
+        <div className="monster-grid">
           {monsters.map((env: Monster, idx: number) => (
-            <div key={idx} className="environment-card">
+            <div key={idx} className="monster-card">
               <div className="image-wrapper">
                 <img src={env.image} alt={env.name} />
-                <p className="env-label">{env.name}</p>
+                <p className="monster-label">{env.name}</p>
               </div>
             </div>
           ))}
