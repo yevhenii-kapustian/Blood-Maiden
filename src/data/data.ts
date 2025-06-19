@@ -269,7 +269,7 @@ export const environmentPictures: IGalleryPicture[] = [
 export const monsters: Monster[] = [
   { name: 'Vines', image: '/images/screenshots/enemiesandobstacles/obstacles_level_1_v2.png' },
   { name: 'THORNED BLASPHEMER', image: '/images/screenshots/enemiesandobstacles/turning_obstacles_level1.png'},
-  { name: 'Vines', image: '/images/screenshots/enemiesandobstacles/obstacles_level_1.png' },
+  { name: 'Raining Daggers', image: '/images/screenshots/enemiesandobstacles/rainingdaggers.png'},
   { name: 'Hot air balloon', image: '/images/screenshots/enemiesandobstacles/obstacles_level_2.png'},
   { name: 'Enemy', image: '/images/screenshots/enemiesandobstacles/enemy1.png'},
   { name: 'Enemy', image: '/images/screenshots/enemiesandobstacles/enemy2.png'},
