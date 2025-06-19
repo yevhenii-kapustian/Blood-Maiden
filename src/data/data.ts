@@ -14,7 +14,7 @@ export const headerLinks = new Map<string, string[]>([
 
 export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
   ['title', { text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels"] }],
-  ['subtitle', { text: ["Morph blood into deadly weapons and tools.", "Designed for fast reflexes and precise movement—every mistake could be lethal.", ] }]
+  ['subtitle', { text: ["Morph blood into deadly weapons and tools.", "Designed for fast reflexes and precise movement—every mistake could be lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking. "] }]
 ])
 
 export const gameFeaturesSecondary = new Map<string, GameTextsArray>([

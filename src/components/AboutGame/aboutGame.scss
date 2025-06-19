@@ -21,10 +21,10 @@
     }
     &__content {
         font-size: 24px;
-        padding: 3rem 0;
+        padding: 3rem 4rem;
     }
     &__title {
-        padding-bottom: 10px; 
+        padding-bottom: 1.5rem; 
          @include responsive-media-m {
             text-align: center;
         }

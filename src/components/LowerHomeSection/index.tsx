@@ -19,7 +19,7 @@ export default function LowerHome() {
           {/* Desktop Layout */}
           <div className="desktopOnly">
             <div className="title">
-        <h3>Enter a Bloodstained Dance of Death and Magic</h3>
+              <h3>Enter a Bloodstained Dance of Death and Magic</h3>
               <p>In this rogue-lite adventure, death — and spilling your own blood — is the only way to learn. Driven by the exquisite crimson liquid, cut and slash your way through a relentless throng of foes.
 
                 Uncover the filthy secrets of a twisted version of Victorian London — a city ruled by an undead king, driven mad by Masonic knowledge of eternal life. There, your reflexes will be tested thousands of times, and you’ll lose most of those battles.
@@ -53,6 +53,8 @@ export default function LowerHome() {
                   height={200}
                   className="sideImage"
                 />
+
+                <div className='space' />
                 <LowerInfoItem text={gameFeaturesPrimary.get('title')?.text} subtitle={gameFeaturesPrimary.get('subtitle')?.text} title='GAME FEATURES' />
 
               </div>
@@ -75,6 +77,7 @@ export default function LowerHome() {
                   height={200}
                   className="sideImage"
                 />
+                <div className='space' />
                 <LowerInfoItem text={gameFeaturesSecondary.get('title')?.text} subtitle={gameFeaturesSecondary.get('subtitle')?.text} title='GAME FEATURES' />
               </div>
             </div>
@@ -156,6 +159,22 @@ export default function LowerHome() {
               </div>
             </>
 
+            <div className="download">
+              <a
+                href="https://futuregames.itch.io/blood-maiden"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='itchioButton'
+              >
+                <Image
+                  src="/images/ITCHIO, CTA-link to website.png"
+                  alt="itch.io"
+                  width={150}
+                  height={50}
+                />
+              </a>
+            </div>
+            <div className='space' />
             <div className="title">
               <h3>Enter a Bloodstained Dance of Death and Magic</h3>
               <p>In this rogue-lite adventure, death — and spilling your own blood — is the only way to learn. Driven by the exquisite crimson liquid, cut and slash your way through a relentless throng of foes.
