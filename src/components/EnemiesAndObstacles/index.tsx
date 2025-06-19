@@ -7,7 +7,7 @@ import { monsters } from '@/data/data';
 const EnemiesAndObstacles: React.FC = () => {
   return (
     <div id='enemies' className="level-monster">
-      <h1 className="monster-title">Monster and obstacles</h1>
+      <h1 className="monster-title">Enemies and obstacles</h1>
 
       <div className="monster-section">
         <div className="monster-grid">

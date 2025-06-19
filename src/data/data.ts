@@ -13,13 +13,13 @@ export const headerLinks = new Map<string, string[]>([
 ]);
 
 export const gameFeaturesPrimary = new Map<string, GameTextsArray>([
-  ['title', { text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels", "Rogue-like Progression"] }],
-  ['subtitle', { text: ["Morph blood into deadly weapons and tools.", "Designed for fast reflexes and precise movement—every mistake could be lethal.", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."] }]
+  ['title', { text: ["Blood Bending Mechanic", "High-Difficulty Combat Platforming", "Speedrun-Oriented Levels"] }],
+  ['subtitle', { text: ["Morph blood into deadly weapons and tools.", "Designed for fast reflexes and precise movement—every mistake could be lethal.", ] }]
 ])
 
 export const gameFeaturesSecondary = new Map<string, GameTextsArray>([
-  ['title', { text: ["Powerful Protagonist", "Stylized Checkpoints"] }],
-  ['subtitle', { text: ["Play as a fast, fierce female with blood magic—unlock abilities that make you unstoppable.", "Bath at fountain of blood and restore your health and  memory. "] }]
+  ['title', { text: ["Powerful Protagonist", "Stylized Checkpoints", "Rogue-like Progression"] }],
+  ['subtitle', { text: ["Play as a fast, fierce female with blood magic—unlock abilities that make you unstoppable.", "Bath at fountain of blood and restore your health and  memory. ", "The clock is ticking. Every level is time-limited and demands quick thinking.", "Die, learn, return stronger. Revenge requires resilience."] }]
 ])
 
 export const gameInformation = new Map<string, GameTextsArray>([
