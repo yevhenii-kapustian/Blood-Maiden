@@ -28,7 +28,7 @@ const Footer = () => {
           <a target='_blank' href="https://itch.io/">itch.io</a>
         </div>
         <div className="center">
-          <p className='text'>© 2025 Group 7 Studios. All Rights Reserved.</p>
+          <p className='text'>© 2025 Snackboard Studios. All Rights Reserved.</p>
           <a target='_blank' href="https://itch.io/docs/legal/privacy-policy">Privacy Policy</a> | <a target='_blank' href="https://itch.io/docs/legal/terms">Terms Of Use</a>
         </div>
       </div>
