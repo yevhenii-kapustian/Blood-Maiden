@@ -169,12 +169,13 @@ export const gameCreators = new Map<string, GameCreators[]>([
     {
       name: "Tobias Kjernell",
       role: "Developer",
-      link: "https://www.linkedin.com/"
+      link: "https://www.linkedin.com/in/tobias-kjernell-4b50b113a/"
     },
     {
       name: "Priyesh Illam",
       role: "Developer",
-      link: "https://www.linkedin.com/"
+      link: ""
+
     },
     {
       name: "Yevhenii Kapustian",
@@ -184,11 +185,10 @@ export const gameCreators = new Map<string, GameCreators[]>([
     {
       name: "Megha Albin",
       role: "Developer",
-      link: "https://www.linkedin.com/"
+      link: ""
     }
   ]],
   ['ux-designer', [{
-
     name: 'Paloma Muñoz Inostroza',
     role: 'UX-Designer',
     link: 'https://www.linkedin.com/in/paloma-munoz-inostroza-994182363/'

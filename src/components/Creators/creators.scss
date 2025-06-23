@@ -98,7 +98,7 @@
   max-width: 1200px;
   justify-content: center;
 
-    @media (max-width: 1225px) {
+  @media (max-width: 1225px) {
    grid-template-columns: repeat(2, 1fr);
   }
 
@@ -131,7 +131,6 @@
   border-left: 1px solid hsla(0, 0%, 95%, 0.3);
   border-bottom: 1px solid hsla(0, 0%, 95%, 0.3);
   padding-bottom: .5rem;
-
 }
 
 .grid__item-container {}
