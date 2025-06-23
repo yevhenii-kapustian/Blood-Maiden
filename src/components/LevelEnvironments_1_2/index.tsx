@@ -16,8 +16,8 @@ const LevelEnvironments: React.FC = () => {
               <div key={idx} className="environment-card">
                 <div className="image-wrapper">
                   <img src={env.src} alt={env.name} />
-                  <p className="env-label">{env.name}</p>
                 </div>
+                <p className="env-label">{env.name}</p>
               </div>
             ))}
           </div>
