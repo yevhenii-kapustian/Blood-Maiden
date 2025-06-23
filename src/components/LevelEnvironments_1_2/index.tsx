@@ -7,10 +7,10 @@ import { Environment, Level } from "@/types/type";
 const LevelEnvironments: React.FC = () => {
   return (
     <div className="level-environments">
-      <h1 className="main-title">Level Environments</h1>
+      <h2 className="main-title">Level Environments</h2>
       {levelData.map((level: Level, index: number) => (
         <div id={`${index}`} key={index} className="level-section">
-          <h2 className="level-title">{level.title}</h2>
+          <h3 className="level-title">{level.title}</h3>
           <div className="environment-grid">
             {level.environments.map((env: Environment, idx: number) => (
               <div key={idx} className="environment-card">
