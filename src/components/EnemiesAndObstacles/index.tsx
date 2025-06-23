@@ -15,8 +15,9 @@ const EnemiesAndObstacles: React.FC = () => {
             <div key={idx} className="monster-card">
               <div className="image-wrapper">
                 <img src={env.image} alt={env.name} />
-                <p className="monster-label">{env.name}</p>
+                
               </div>
+              <p className="monster-label">{env.name}</p>
             </div>
           ))}
         </div>
