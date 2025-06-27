@@ -6,9 +6,7 @@ const MediaTrailerSection = (): ReactElement => {
         <div className="media__container media__background ">
             <div className='trailer'>
                 <div className="trailer__border">
-                    <div className="trailer__video-replacer">
-                        <h2>Coming soon</h2></div>
-                    {/* <iframe className='trailer__video' src='https://www.youtube.com/embed/tgbNymZ7vqY?'></iframe> */}
+                        <iframe className='trailer__video' src='https://www.youtube.com/embed/faoj4GXM_hI'></iframe>
                     <div className='trailer__frost' />
                     <img className='trailer__frame' src="bloodframe2.png" alt="bloodframe" />
                 </div>
